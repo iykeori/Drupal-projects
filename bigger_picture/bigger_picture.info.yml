@@ -1,0 +1,30 @@
+name: Bigger Picture
+type: theme
+core: 8.x
+core_version_requirement: ^8 || ^9
+screenshot: screenshot.jpg
+
+base theme: bootstrap
+
+libraries:
+  - bigger_picture/theme
+
+libraries-override:
+  bootstrap/bootstrap:
+    css:
+      theme:
+        css/bootstrap.css: css/theme.css
+
+regions:
+  alert: 'Alert'
+  hero: 'Hero'
+  header_left: 'Header left'
+  header_right: 'Header right'
+  primary_menu: 'Primary menu'
+  before_content: 'Before content'
+  content: 'Content'
+  sidebar_first: 'Sidebar'
+  after_content: 'After content'
+  footer: 'Footer'
+  bottom: 'Bottom'
+  modals: 'Modals'

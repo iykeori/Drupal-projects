@@ -1,0 +1,59 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0 auto;
+  padding: 15px 40px;
+
+  @include media-breakpoint-down(sm) {
+    padding: 15px 20px;
+  }
+
+  a:not(.btn) {
+    color: var(--black);
+  }
+
+  .region-header-left img {
+    width: auto;
+    max-height: 7rem;
+  }
+
+  @include media-breakpoint-down(xs) {
+
+    .region-header-left img {
+      max-width: 16rem;
+    }
+
+    .region-header-right .btn {
+      background: transparent !important;
+      border: 0 !important;
+      color: var(--black) !important;
+      padding: 0;
+    }
+  }
+}
+
+body.navbar-breakpoint {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+    &#{$infix} {
+      @include media-breakpoint-down($breakpoint) {
+
+        .page-header {
+          justify-content: flex-start;
+        }
+
+        .region-header-left {
+          margin-right: auto;
+        }
+
+        .region-header-right {
+          margin-right: $spacer * 0.75;
+        }
+      }
+    }
+  }
+}

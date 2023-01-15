@@ -1,0 +1,71 @@
+body > header {
+
+  .region-header {
+    @include wrapper;
+    padding: 35px 0;
+
+    > .content-wrapper {
+      @include clearfix;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: right;
+      white-space: nowrap;
+
+      .block {
+        display: inline-block;
+        margin-left: 15px;
+        vertical-align: middle;
+      }
+
+      /* First block should be logo */
+      .block:first-child {
+        float: left;
+        margin-right: auto;
+        flex-shrink: 1;
+        -ms-flex-negative: 1;
+      }
+
+      .phone {
+        color: #000;
+        display: block;
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 0.7rem;
+        text-decoration: none;
+      }
+
+      .address {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+  body > header {
+    .region-header > .content-wrapper {
+      display: block;
+      text-align: center;
+
+      .block {
+        margin: 20px 0;
+        display: block;
+        float: none !important;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .social {
+    display: none !important;
+  }
+}

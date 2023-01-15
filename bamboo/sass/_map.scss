@@ -1,0 +1,86 @@
+#block-map {
+  position: relative;
+
+  > .content-wrapper {
+    padding: 7rem 0;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  #map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  .map-overlay {
+    background: #fff;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    padding: 4.5rem;
+    position: relative;
+    width: 49rem;
+    z-index: 10;
+  }
+
+  .office-hours {
+    width: 100%;
+
+    th {
+      border-bottom: 1px solid #e5e5e5;
+      font-size: 1.6rem;
+      padding: 10px 0;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    td {
+      border-bottom: 1px solid #e5e5e5;
+      padding: 10px 0;
+    }
+
+    tr.today th,
+    tr.today td {
+      color: #0cc;
+    }
+
+    tr:last-child {
+      th, td {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .gm-style-pbc {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #block-map {
+
+    > .content-wrapper {
+      padding: 0;
+      width: 100%;
+    }
+
+    #map {
+      position: relative;
+      height: 40rem;
+    }
+
+    .map-overlay {
+      background: none;
+      border-radius: 0;
+      margin: 4rem auto;
+      padding: 0;
+      width: 90%;
+    }
+  }
+}

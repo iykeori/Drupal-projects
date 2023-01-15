@@ -1,0 +1,42 @@
+.btn small {
+  display: block;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1;
+  margin-top: 0.1rem;
+  position: relative;
+  top: 0.2rem;
+  text-transform: uppercase;
+}
+
+.btn-rounded {
+  border-radius: 20rem;
+}
+
+.btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.btn-outline-primary {
+  border-color: var(--primary);
+  color: var(--primary);
+
+  &:hover, &:active {
+    background: inherit;
+    border-color: inherit;
+    color: inherit;
+  }
+}
+
+.btn-outline-light {
+  color: var(--light);
+
+  &:hover, &:active {
+    background: inherit;
+    border-color: var(--light);
+    color: var(--light);
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,28 @@
+:root {
+  --logo-max-height: 7.5rem;
+  --logo-max-width: 30rem;
+}
+
+.page-header {
+  @extend .container;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#block-bigger-picture-branding img {
+  width: 80%;
+  max-width: var(--logo-max-width);
+  max-height: var(--logo-max-height);
+}
+
+.region-header-right {
+  .region-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

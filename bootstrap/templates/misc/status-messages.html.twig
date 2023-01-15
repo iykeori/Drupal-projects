@@ -1,0 +1,31 @@
+{% for type, messages in message_list %}
+  {%
+    set classes = [
+      'alert',
+      'alert-dismissible',
+      'fade',
+      'show',
+      type == 'status' ? 'alert-success',
+      type == 'warning' ? 'alert-warning',
+      type == 'error' ? 'alert-danger',
+    ]
+  %}
+
+  <div role="alert" aria-label="{{ status_headings[type] }}" {{ attributes|without('role', 'aria-label').addClass(classes) }}>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    {% if status_headings[type] %}
+      <h2 class="visually-hidden">{{ status_headings[type] }}</h2>
+    {% endif %}
+    {% if messages|length > 1 %}
+      <ul>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      {{ messages|first }}
+    {% endif %}
+  </div>
+{% endfor %}

@@ -1,0 +1,17 @@
+bootstrap:
+  css:
+    theme:
+      css/bootstrap.css: {}
+  js:
+    js/bootstrap.bundle.js: {}
+  dependencies:
+    - core/jquery
+
+nav-side:
+  css:
+    theme:
+      css/nav-side.css: { weight: -1 }
+  js:
+    js/nav-side.js: {}
+  dependencies:
+    - core/jquery

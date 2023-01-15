@@ -1,0 +1,41 @@
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+    &#{$infix} {
+      @include media-breakpoint-down($breakpoint) {
+
+        .navbar-collapse {
+          background: $dark;
+          color: $light;
+          padding: $spacer;
+          position: fixed !important;
+          top: 0;
+          right: -100%;
+          transition: right 0.3s ease;
+          width: auto;
+          height: 100%;
+          z-index: 1000;
+
+          .nav {
+            flex-direction: column;
+          }
+
+          .nav-link {
+            color: $light;
+          }
+
+          &.show {
+            right: 0;
+          }
+
+          .dropdown-toggle::after,
+          .dropdown-menu {
+            display: none !important;
+          }
+        }
+
+      }
+    }
+  }
+}

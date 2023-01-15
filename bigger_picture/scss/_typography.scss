@@ -1,0 +1,79 @@
+:root {
+  --body-font-family: 'Open Sans', sans-serif;
+  --body-font-weight: 300;
+  --headings-color: var(--page-foreground);
+  --headings-font-family: 'Open Sans', sans-serif;
+  --headings-font-weight: 300;
+  --link-color: var(--primary);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--body-font-family);
+  font-weight: var(--body-font-weight);
+}
+
+p {
+  font-size: 1.7rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+h1, .h1 {
+  color: var(--headings-color);
+  font-family: var(--headings-font-family);
+  font-size: 3.8rem;
+  font-weight: var(--headings-font-weight);
+  margin-bottom: 2rem;
+
+  small {
+    display: block;
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 3.2rem;
+  }
+}
+
+h2, .h2 {
+  color: var(--headings-color);
+  font-family: var(--headings-font-family);
+  font-size: 2.6rem;
+  font-weight: var(--headings-font-weight);
+  line-height: 1.3;
+  margin-bottom: 1.4rem;
+
+  small {
+    display: block;
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+  }
+}
+
+h3, .h3 {
+  font-family: var(--headings-font-family);
+  font-size: 2.8rem;
+  font-weight: var(--headings-font-weight);
+
+  small {
+    display: block;
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+  }
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+a, a:hover {
+  color: var(--link-color);
+}

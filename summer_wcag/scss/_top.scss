@@ -1,0 +1,14 @@
+.region-top {
+  @extend .container-fluid;
+  
+  background-color: gray;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  a {
+    color: #fff;
+  }
+}

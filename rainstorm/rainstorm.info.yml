@@ -1,0 +1,35 @@
+name: Rain Storm
+type: theme
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: false
+
+libraries:
+  - rainstorm/rainstorm
+
+libraries-override:
+ core/modernizr:
+  js:
+    assets/vendor/modernizr/modernizr.min.js: js/modernizr-custom.js
+
+
+ckeditor_stylesheets:
+  - css/respond.css
+
+regions:
+  headerleft: Header left
+  headerright: Header right
+  intro: Intro
+  content: Content
+  levelone : Level one
+  leveltwosquares : Level two squares
+  squarestwo : Squares two
+  levelthree : Level three
+  levelfour : Level four
+  levelfourleft: Level four left
+  levelfourright: Level four right
+  levelfive : Level five
+  levelsix : Level six
+  levelseven : Level seven
+  leveleight : Level eight
+  footer: Footer

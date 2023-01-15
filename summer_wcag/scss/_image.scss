@@ -1,0 +1,22 @@
+.img {
+
+  &-border {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    &::after {
+      border: 1px solid $primary;
+      content: '';
+      display: block;
+      position: absolute;
+      top: -11px;
+      left: -11px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.region-content {
+  padding: $spacer * 3 $spacer * 4;
+
+  h1, .h1 {
+    margin-bottom: 2rem;
+  }
+
+  p {
+    margin-bottom: 2rem;
+
+    & + h2 {
+      margin-top: 3rem;
+    }
+  }
+
+  ul {
+    padding-left: 3rem;
+
+    li {
+      margin-bottom: 2rem;
+
+      ul {
+        margin-top: 2rem !important;
+      }
+    }
+
+    & + h2 {
+      margin-top: 3rem;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 0 0 $spacer 0;
+  }
+}

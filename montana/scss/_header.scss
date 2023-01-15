@@ -1,0 +1,85 @@
+:root {
+  --header-background: var(--dark);
+  --mobile-phone-color: #000;
+}
+
+.page-header {
+  background: var(--header-background);
+  padding: 1rem 0;
+
+  .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  a:not(.btn) {
+    color: var(--white);
+    background: var(--dark);
+    font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .region-header-left img {
+    width: auto;
+    max-height: 7rem;
+  }
+
+  .region-header-right .btn {
+    padding: 0.6rem 1.8rem;
+  }
+
+  @include media-breakpoint-down(xs) {
+    .region-header-left img {
+      max-width: 16rem;
+    }
+
+    .region-header-right .btn {
+      background: transparent;
+      border: 0;
+      color: var(--mobile-phone-color);
+      padding: 0.8rem 0;
+    }
+  }
+
+  .nav-link {
+    color: var(--white);
+    background: var(--dark);
+    font-size: 1.6rem;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .icon {
+    display: block;
+  }
+}
+
+body.navbar-breakpoint {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+    &#{$infix} {
+      @include media-breakpoint-down($breakpoint) {
+
+        .page-header {
+          justify-content: flex-start;
+        }
+
+        .region-header-left {
+          margin-right: auto;
+        }
+
+        .region-header-right {
+          margin-right: 0px;
+          @media(max-width: 1200px){
+            margin-right: 10px;
+          }
+          @media(max-width: 767px){
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+  }
+}

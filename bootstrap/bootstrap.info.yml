@@ -1,0 +1,16 @@
+name: Optio Bootstrap
+type: theme
+core: 8.x
+core_version_requirement: ^8 || ^9
+version: '8.x-1.0'
+base theme: false
+
+libraries:
+  - bootstrap/bootstrap
+
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  content: 'Content'
+  footer: 'Footer'
+  modals: 'Modals'

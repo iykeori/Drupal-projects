@@ -1,0 +1,24 @@
+.carousel-fade-out-in {
+
+  .carousel-item {
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    transform: none !important;
+    transition: opacity 600ms 600ms;
+
+    img {
+      display: block;
+    }
+  }
+
+  .active.carousel-item-left {
+    opacity: 0;
+    transition: opacity 600ms 0;
+  }
+
+  .active {
+    opacity: 1;
+    pointer-events: all;
+  }
+}

@@ -1,0 +1,21 @@
+<nav class="navbar container-fluid {{ navbar_class }}">
+  <div class="navbar-brand">
+    {{ page.header }}
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarContent">
+    {{ page.primary_menu }}
+  </div>
+</nav>
+
+<main class="container-fluid">
+  {{ page.content }}
+</main>
+
+<footer class="container-fluid">
+  {{ page.footer }}
+</footer>
+
+{{ page.modals }}

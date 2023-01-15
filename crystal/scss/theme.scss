@@ -1,0 +1,47 @@
+@import 'fonts';
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'accordion';
+@import 'alert';
+@import 'appointment-form';
+@import 'button';
+@import 'card-carousel';
+@import 'footer';
+@import 'form';
+@import 'header';
+@import 'hero';
+@import 'icon-bar';
+@import 'icons';
+@import 'layout';
+@import 'list';
+@import 'logo-carousel';
+@import 'map';
+@import 'media';
+@import 'nav';
+@import 'page-title';
+@import 'reviews';
+@import 'services';
+@import 'team';
+@import 'typography';
+@import 'videos';
+@import 'video-link';
+
+:root {
+  --link-color: var(--primary);
+}
+
+html, body {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.8rem;
+}
+
+a {
+  color: var(--link-color);
+}
+
+.dialog-off-canvas-main-canvas {
+  border-top: 1rem solid var(--primary);
+}

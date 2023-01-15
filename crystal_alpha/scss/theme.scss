@@ -1,0 +1,31 @@
+@import 'fonts';
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'appointment-form';
+@import 'button';
+@import 'card-carousel';
+@import 'footer';
+@import 'form';
+@import 'header';
+@import 'hero';
+@import 'icon-bar';
+@import 'icons';
+@import 'layout';
+@import 'list';
+@import 'map';
+@import 'media';
+@import 'nav';
+@import 'page-title';
+@import 'services';
+@import 'team';
+@import 'typography';
+@import 'videos';
+
+html, body {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.8rem;
+  margin: $spacer;
+}

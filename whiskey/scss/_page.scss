@@ -1,0 +1,21 @@
+:root {
+  --secondary-page-background-color: var(--light);
+}
+
+.path-reviews,
+.path-privacy-policy,
+.path-sitemap,
+.path-videos {
+
+  .region-content {
+    background: var(--secondary-page-background-color);
+
+    #block-whiskey-content {
+      padding-top: 80px !important;
+
+      @include media-breakpoint-down(md) {
+        padding-top: 50px !important;
+      }
+    }
+  }
+}

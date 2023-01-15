@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 163.9 163.9" style="enable-background:new 0 0 163.9 163.9;" xml:space="preserve">
+<style type="text/css">
+	.icon-fill{fill:var(--icon-color-primary, #e1ecf3);}
+	.snoring-st1{fill:none;stroke:#333333;stroke-width:1.5;stroke-miterlimit:10;}
+</style>
+<g id="Layer_20_copy">
+	<path class="icon-fill" d="M118,118.6L118,118.6l-0.2-0.9c-0.1-0.3-0.1-0.6-0.2-0.9L96.7,38.1c-0.2-1.3-0.6-2.6-1-3.8l0,0l0,0
+		C92.6,26,84.4,20.6,75.3,21.4C69.8,22,65,24.7,61.7,28.7l0,0L7.6,82.8l0,0.1C3.1,86.9,0.5,93,1.1,99.5c0.8,8.1,6.3,14.6,13.6,17
+		l0,0l0.2,0.1c0,0,0,0,0,0l75.8,24.4c1.2,0.5,2.4,0.9,3.7,1.2l0,0l0,0c1.9,0.4,4,0.5,6,0.3c10.9-1,18.9-10.7,17.9-21.7
+		C118.3,120.1,118.2,119.3,118,118.6z"/>
+</g>
+<g id="snoring">
+	<g>
+		<path class="snoring-st1" d="M110,36.9c-24.9,0-45,20.2-45,45c0,7.5,1.8,14.5,5,20.7L67.7,116l13.6,0.7C89,123.1,99,127,110,127
+			c24.9,0,45-20.2,45-45C155,57.1,134.8,36.9,110,36.9z"/>
+		<polyline class="snoring-st1" points="89,87.3 99.2,87.3 89.5,103.7 99.2,103.7 		"/>
+		<polyline class="snoring-st1" points="105.3,75.2 115.6,75.2 105.9,91.5 115.6,91.5 		"/>
+		<polyline class="snoring-st1" points="122.2,62.9 132.5,62.9 122.8,79.2 132.5,79.2 		"/>
+	</g>
+</g>
+</svg>

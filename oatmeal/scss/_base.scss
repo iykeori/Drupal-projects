@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: linear-gradient(
+    rgba(222, 218, 213, 1) 0rem,
+    rgba(222, 218, 213, 0) 40rem,
+    rgba(222, 218, 213, 0) 100%
+  );
+  font-size: 1.8rem;
+  font-weight: 300;
+  min-height: 100vh;
+}

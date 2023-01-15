@@ -1,0 +1,20 @@
+.container {
+  margin: auto;
+  padding-left: $spacer;
+  padding-right: $spacer;
+  max-width: $container-max-width;
+
+  @media (max-width: 767px) {
+    padding-left: $spacer / 2;
+    padding-right: $spacer / 2;
+  }
+}
+
+.layout-2-columns {
+  column-count: 2;
+  column-gap: $spacer;
+
+  @include media-breakpoint-down(sm) {
+    column-count: 1;
+  }
+}

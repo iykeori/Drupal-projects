@@ -1,0 +1,38 @@
+.carousel {
+
+  .carousel-caption {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    padding: $spacer * 4;
+    text-align: left;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  @include media-breakpoint-down(md) {
+
+    .carousel-inner {
+      .img-fluid {
+        object-fit: cover;
+        width: 100%;
+        min-height: 34rem;
+      }
+    }
+
+    .carousel-caption {
+      padding: 3rem;
+
+      .display-1 {
+        font-size: 5rem;
+        margin-bottom: 1rem;
+      }
+
+      .btn-primary {
+        display: block;
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 11.5rem;
+      }
+    }
+  }
+}

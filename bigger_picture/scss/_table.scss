@@ -1,0 +1,23 @@
+:root {
+  --table-striped-color: var(--light);
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table-striped {
+
+  tr:nth-child(odd) {
+    background: var(--table-striped-color);
+  }
+
+  th {
+    font-weight: var(--body-font-weight);
+  }
+
+  td, th {
+    border-top: 0;
+    padding: 1rem 2rem;
+  }
+}

@@ -1,0 +1,43 @@
+.region-bottom {
+  background: darken($dark, 10);
+  color: #fff;
+  font-size: 1.6rem;
+
+  .region-inner {
+    @extend .container-fluid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: $spacer * 1.5 !important;
+    padding-bottom: $spacer * 1.5 !important;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+  }
+
+  .nav {
+    margin-left: $spacer;
+
+    .nav-item {
+      display: inline-block;
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
+
+      @include media-breakpoint-down(md) {
+        &:first-child {
+          border: 0;
+        }
+      }
+
+      a {
+        color: #fff;
+        display: inline-block;
+        padding: 0.5rem $spacer;
+      }
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}

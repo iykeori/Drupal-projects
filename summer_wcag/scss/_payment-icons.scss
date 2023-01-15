@@ -1,0 +1,62 @@
+.payment-options {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0 !important;
+
+  li {
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    margin-right: 0.5rem;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 80px;
+    height: 50px;
+    padding: 0;
+  }
+
+  &-amex {
+    background-image: url('../images/payment-options/amex.png');
+  }
+
+  &-carecredit {
+    background-image: url('../images/payment-options/carecredit.png');
+  }
+
+  &-cash {
+    background-image: url('../images/payment-options/cash.png');
+  }
+
+  &-debit {
+    background-image: url('../images/payment-options/debit.png');
+  }
+
+  &-dentalcard {
+    background-image: url('../images/payment-options/dentalcard.png');
+  }
+
+  &-discover {
+    background-image: url('../images/payment-options/discover.png');
+  }
+
+  &-e-transfer {
+    background-image: url('../images/payment-options/e-transfer.png');
+  }
+
+  &-mastercard {
+    background-image: url('../images/payment-options/mastercard.png');
+  }
+
+  &-paybright {
+    background-image: url('../images/payment-options/paybright.png');
+  }
+
+  &-payment-plans {
+    background-image: url('../images/payment-options/payment-plans.png');
+  }
+
+  &-visa {
+    background-image: url('../images/payment-options/visa.png');
+  }
+}

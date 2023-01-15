@@ -1,0 +1,26 @@
+.webform-submission-form {
+
+  label {
+    font-family: $font-family-sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  input {
+    font-family: var(--body-font-family);
+    font-size: 1.7rem;
+    font-weight: var(--body-font-weight);
+  }
+
+  .form-item-test-optio {
+    margin: 0;
+    overflow: hidden;
+    height: 0;
+  }
+
+  .form-actions {
+    margin-top: 2rem;
+  }
+}

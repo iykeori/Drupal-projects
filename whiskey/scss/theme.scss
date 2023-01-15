@@ -1,0 +1,46 @@
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'accordion';
+@import 'alert';
+@import 'appointment-form';
+@import 'block';
+@import 'button';
+@import 'card-carousel';
+@import 'carousel';
+@import 'clip';
+@import 'contact';
+@import 'decoration';
+@import 'fonts';
+@import 'footer';
+@import 'form';
+@import 'header';
+@import 'hero';
+@import 'icon';
+@import 'layout';
+@import 'list';
+@import 'media';
+@import 'nav';
+@import 'office-hours';
+@import 'optio';
+@import 'page';
+@import 'services';
+@import 'sitemap';
+@import 'testimonial';
+@import 'top';
+@import 'typography';
+@import 'video-link';
+
+html, body {
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--page-background);
+  color: var(--page-foreground);
+  font-size: 1.8rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * Provide subtitle to page title template.
+ */
+function montana_preprocess_page_title(&$variables) {
+
+  // Get subtitle for node
+  $node = \Drupal::request()->attributes->get('node');
+  if (!empty($node)) {
+    try {
+      $variables['subtitle'] = $node->get('field_subtitle')->getString();
+    } catch (Exception $ex) {
+      // No subtitle
+    }
+  }
+
+  // Get subtitle for view
+  $view_id = \Drupal::routeMatch()->getParameter('view_id');
+  if ($view_id) {
+    $view = \Drupal\views\Views::getView($view_id);
+    $title = $view->getTitle();
+    preg_match('/[\w\s]*<small>([\w\s]*)<\/small>/', $title, $matches);
+    if (!empty($matches)) {
+      $variables['subtitle'] = $matches[1];
+      $variables['title'] = preg_replace('/<small>[\w\s]*<\/small>/', '', $title);
+    }
+  }
+}
+
+/**
+ * Strip subtitle from page title.
+ * Applies to views with <small> tags in the title.
+ */
+function montana_preprocess_html(&$variables) {
+  $view_id = \Drupal::routeMatch()->getParameter('view_id');
+  if ($view_id) {
+    $view = \Drupal\views\Views::getView($view_id);
+    $title = $view->getTitle();
+    preg_match('/[\w\s]*<small>([\w\s]*)<\/small>/', $title, $matches);
+    if (!empty($matches)) {
+      $subtitle = $matches[1];
+      $variables['head_title']['title'] = str_replace($subtitle, '', $variables['head_title']['title']);
+    }
+  }
+}

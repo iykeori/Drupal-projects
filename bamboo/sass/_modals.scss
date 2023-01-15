@@ -1,0 +1,70 @@
+.region-modals {
+
+  .block {
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    opacity: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    transition: opacity 300ms;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+
+    &.visible {
+      display: block;
+      opacity: 1;
+    }
+
+    &::before, &::after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 1px;
+      height: 100%;
+    }
+
+    .content-wrapper {
+      background: #fff;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 5% 0;
+      padding: 4.5rem;
+      position: relative;
+      text-align: left;
+      vertical-align: middle;
+      max-width: 90%;
+    }
+
+    h2 {
+      font-family: 'Noto Serif',serif;
+      font-size: 3rem;
+      padding-right: 4rem;
+
+      &::after {
+        background: #0cc;
+        content: '';
+        display: block;
+        margin: 2.5rem 0 3rem;
+        width: 40px;
+        height: 3px;
+      }
+    }
+
+    .close {
+      background: url('../images/close.png');
+      background-size: 100% 100%;
+      cursor: pointer;
+      overflow: hidden;
+      position: absolute;
+      top: 4.5rem;
+      right: 4.5rem;
+      text-indent: -9999px;
+      width: 2.3rem;
+      height: 2.3rem;
+    }
+  }
+}

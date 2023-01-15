@@ -1,0 +1,18 @@
+:root {
+  --top-background-color: var(--primary);
+  --top-foreground-color: var(--white);
+}
+
+.region-top {
+  background: var(--top-background-color);
+  color: var(--top-foreground-color);
+  padding: 1rem 40px;
+
+  @include media-breakpoint-down(sm) {
+    padding: 1rem 20px;
+  }
+
+  a {
+    color: var(--top-foreground-color);
+  }
+}

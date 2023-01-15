@@ -1,0 +1,21 @@
+name: Bamboo
+type: theme
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: false
+
+libraries:
+  - bamboo/bamboo
+
+regions:
+  header: Header
+  primary_menu: Primary menu
+  hero: Hero image
+  slide_show: Slide show
+  triptych: Triptych
+  content: Content
+  bottom: Bottom
+  sidebar_first: Sidebar
+  footer_left: Footer left
+  footer_right: Footer right
+  modals: Modals

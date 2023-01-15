@@ -1,0 +1,33 @@
+name: Big Picture Eight
+type: theme
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: false
+
+libraries:
+  - bigpictureeight/bigpictureeight
+
+ckeditor_stylesheets:
+  - css/respond.css
+
+regions:
+  appointmentpop: Appointment popup
+  menulines: Mobile menu lines
+  contactpop: Contact popup
+  mobiletop: Mobile top
+  mobilemenu: Mobile menu
+  topbar: Top bar
+  headera : Header A
+  headerb: Header B
+  hero: Hero
+  header: Header
+  navbara: Navbar A
+  navbarb: Navbar B
+  highlighted: Highlighted
+  content: Content
+  levelone : Level one
+  leveltwo : Level two
+  levelthree : Level three
+  levelfour : Level four
+  sidebar : Sidebar
+  footer: Footer

@@ -1,0 +1,44 @@
+.btn {
+  text-decoration: none !important;
+  transition: all 150ms;
+
+  &:active, &:focus {
+    box-shadow: none !important;
+  }
+
+  &-primary {
+
+    &:active, &:focus {
+      background: var(--primary) !important;
+      border-color: var(--primary) !important;
+      box-shadow: none;
+      filter: brightness(1.2);
+    }
+  }
+
+  &-outline-dark {
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.1);
+      color: var(--dark);
+    }
+  }
+
+  &-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+
+    &:hover, &:active, &:focus {
+      filter: brightness(1.1);
+    }
+  }
+
+  &--secondary {
+    background-color: var(--secondary) !important;
+    border-color: var(--secondary) !important;
+
+    &:hover, &:active, &:focus {
+      filter: brightness(1.1);
+    }
+  }
+}

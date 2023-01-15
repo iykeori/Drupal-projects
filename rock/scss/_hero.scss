@@ -1,0 +1,78 @@
+:root {
+  --hero-background-color: var(--white);
+  --hero-background-image: none;
+}
+
+.region-hero {
+  background-color: var(--hero-background-color);
+  background-image: var(--hero-background-image);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  min-height: 540px;
+  overflow: hidden;
+  position: relative;
+
+  .region-inner {
+    width: 100%;
+  }
+
+  @include media-breakpoint-down(md) {
+    background-image: none;
+    min-height: 0 !important;
+  }
+}
+
+body.path-frontpage .region-hero {
+  min-height: 650px;
+
+  .carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &-inner, &-item {
+      height: 100%;
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    height: 650px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    min-height: 500px;
+  }
+
+  @include media-breakpoint-down(md) {
+    .carousel {
+      display: none;
+    }
+
+    .container {
+      height: auto;
+    }
+  }
+}
+
+body.path-sitemap .region-hero,
+body.path-privacy-policy .region-hero,
+body.path-covid-19 .region-hero {
+  min-height: 30rem;
+}

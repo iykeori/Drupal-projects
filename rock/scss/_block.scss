@@ -1,0 +1,8 @@
+:root {
+  --block-background-image: none;
+}
+
+.block-background-image {
+  background-image: var(--block-background-image);
+  background-size: cover;
+}

@@ -1,0 +1,25 @@
+.quote {
+  padding-right: 2rem;
+
+  p {
+    font-family: 'Noto Serif', serif;
+    font-size: 3.2rem;
+    line-height: 1.4 !important;
+    position: relative;
+
+    &::before {
+      content: '“';
+      position: absolute;
+      top: 0;
+      left: -0.6em;
+    }
+
+    &::after {
+      content: '”';
+    }
+  }
+}
+
+.sidebar .block:first-child .quote {
+  margin-top: 10.9rem;
+}

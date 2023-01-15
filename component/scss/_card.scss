@@ -1,0 +1,34 @@
+.card-container{
+
+    .col-3{
+        @media(max-width: 768px){
+            max-width: 33.3%;  
+        }
+    }
+    .views-row{  
+        width: 25%; 
+        justify-content: center;
+        
+        @media(max-width: 767px){
+            width: 100%;  
+        }
+        .card{
+            border: none;
+            border: 1px solid rgba(0,0,0,0.125);
+
+            .thumbnail{
+                img{
+                    width: -webkit-fill-available;
+                    background-size: cover;
+                }
+            }
+            .descript{
+                height: 50px;
+                font-size: 14px;
+            }
+            .title{
+                font-size: 22px;
+            }
+        }
+    }
+}

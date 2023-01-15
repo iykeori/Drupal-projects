@@ -1,0 +1,14 @@
+:root {
+  --alert-background-color: var(--primary);
+  --alert-foreground-color: white; }
+
+.region-alert {
+  background: var(--alert-background-color);
+  color: var(--alert-foreground-color);
+
+  .region-inner {
+    @extend .container;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}

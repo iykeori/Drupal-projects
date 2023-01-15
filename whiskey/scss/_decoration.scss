@@ -1,0 +1,71 @@
+:root {
+  --decoration-color: var(--primary);
+  --decoration-opacity: 0.15;
+  --decoration-image: url('/files/images/practice.jpg');
+}
+
+.decoration {
+
+  &-offset-square {
+    margin-top: $spacer * 1.5;
+    position: relative;
+
+    &::after {
+      aspect-ratio: 1;
+      background-color: var(--decoration-color);
+      content: '';
+      display: block;
+      opacity: var(--decoration-opacity);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(50%, -$spacer * 1.5);
+      width: 100%;
+      z-index: -1;
+    }
+  }
+
+  &-offset-circle {
+    position: relative;
+
+    &::after {
+      aspect-ratio: 1;
+      background-color: var(--decoration-color);
+      background-image: var(--decoration-image);
+      background-size: cover;
+      border-radius: 100%;
+      content: '';
+      display: block;
+      filter: grayscale(100%);
+      mix-blend-mode: multiply;
+      opacity: var(--decoration-opacity);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(50%, -50%);
+      width: 100%;
+    }
+
+    img {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &-underline {
+
+    &::after {
+      background: var(--decoration-color);
+      content: '';
+      display: block;
+      margin-top: 1rem;
+      opacity: var(--decoration-opacity);
+      width: 16rem;
+      height: 0.5rem;
+    }
+  }
+}
+
+.bg-light {
+  background: var(--light) !important;
+}

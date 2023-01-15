@@ -1,0 +1,23 @@
+.path-contact-us {
+
+  .region-content {
+    background: var(--secondary-page-background-color);
+
+    .webform-submission-form {
+      background: var(--white);
+      padding: $spacer * 1.5;
+
+      p {
+        margin-bottom: 3.5rem;
+      }
+
+      @include media-breakpoint-down(sm) {
+        padding: $spacer * 0.75;
+
+        h2, p, .form-actions {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

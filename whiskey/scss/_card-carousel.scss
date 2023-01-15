@@ -1,0 +1,45 @@
+.card-carousel {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+
+  &-inner {
+    overflow: hidden;
+    position: relative;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  &-items {
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: left 300ms;
+  }
+
+  .carousel-control-prev {
+    width: auto;
+
+    &-icon {
+      background: url('../images/previous.svg');
+      width: 2rem;
+      height: 4rem;
+    }
+  }
+
+  .carousel-control-next {
+    width: auto;
+
+    &-icon {
+      background: url('../images/next.svg');
+      width: 2rem;
+      height: 4rem;
+    }
+  }
+
+  &--first .carousel-control-prev,
+  &--last .carousel-control-next {
+    cursor: default;
+    opacity: 0.1;
+  }
+}

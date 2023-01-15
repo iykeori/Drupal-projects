@@ -1,0 +1,37 @@
+/* Override Bootstrap variables here */
+:root {
+  --body-font-family: 'Montserrat', sans-serif;
+  --headings-font-family: 'Montserrat', sans-serif;
+  --headings-font-weight: 500;
+  --headings-font-italized: 'Merriweather', serif;
+  --footer-color: black;
+  --page-background: #030409;
+  --content-background: white;
+  --dark: black;
+}
+
+$theme-colors: (
+  'primary': #27a4c0,
+  'secondary': #8a5c28,
+  'dark': #000,
+  'light': #fff
+);
+
+$btn-border-radius: 100rem;
+$font-family-sans-serif: var(--body-font-family);
+$font-size-base: 1.6rem;
+$grid-gutter-width: 50px;
+$headings-font-family: var(--headings-font-family);
+$headings-font-weight: var(--headings-font-weight);
+$paragraph-margin-bottom: 1.8rem;
+$input-btn-padding-y: .375rem !default;
+$input-btn-padding-x: 1.25rem;
+$spacer: 50px;
+$container-max-width: 1310px;
+$page-max-width: 2100px;
+$color-black: black;
+$white: #ffff;
+$light-ash: #f7f7f7;
+$brown: #8a5c28;
+$light-blue: #27a4c0;
+$line-height-base: 1.7 !default;

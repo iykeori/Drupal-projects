@@ -1,0 +1,12 @@
+rainstorm:
+  version: 3.3.6
+  css:
+    theme:
+        css/12columngrid.css: {}
+        css/reset.css: {}
+        css/respond.css: {}
+  js:
+    js/main.js: {}
+  dependencies:
+    - core/jquery
+    - core/modernizr

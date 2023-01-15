@@ -1,0 +1,27 @@
+.review-random {
+  position: relative;
+  height: 0;
+  z-index: 10;
+
+  .review {
+    background: #000;
+    color: #fff;
+    display: none;
+    font-family: $font-family-sans-serif;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    width: 80%;
+    max-width: 780px;
+
+    &::before {
+      background: url('../images/star.png');
+      content: '';
+      display: block;
+      margin: 0 auto 15px;
+      width: 125px;
+      height: 17px;
+    }
+  }
+}

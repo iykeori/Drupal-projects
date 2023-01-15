@@ -1,0 +1,9 @@
+<div{{ attributes.addClass('media media--video') }}>
+  {{ title_suffix.contextual_links }}
+  <video
+    src="{{ file_url(media.field_media_video_file.entity.uri.value) }}"
+    poster="{{ file_url(media.field_media_image.entity.uri.value) }}"
+    controls>
+    <p>Video not supported</p>
+  </video>
+</div>

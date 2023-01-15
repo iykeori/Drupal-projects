@@ -1,0 +1,43 @@
+:root {
+  --review-author-color: var(--page-foreground);
+}
+
+.review {
+  break-inside: avoid;
+
+  &::before {
+    content: '';
+    display: block;
+    background-image: url(../images/5-star.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 30px;
+    margin-bottom: 25px;
+  }
+
+  &-author {
+    color: var(--review-author-color);
+    font-size: 1.6rem;
+    font-style: italic;
+
+    &::before {
+      content: '-';
+    }
+  }
+}
+
+.region-content .review {
+  margin-bottom: 4rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.region-sidebar-first .review {
+
+  p {
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+}

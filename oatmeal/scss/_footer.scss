@@ -1,0 +1,30 @@
+.region-footer {
+  background: $dark;
+  color: #fff;
+
+  .region-inner {
+    @extend .container-fluid;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: $spacer * 3 !important;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+  }
+
+  p {
+    line-height: $line-height-base;
+  }
+
+  .btn {
+    background: #000;
+    color: #fff;
+  }
+
+  a {
+    color: #fff;
+  }
+}

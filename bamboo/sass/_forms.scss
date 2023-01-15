@@ -1,0 +1,83 @@
+form {
+  font-size: 1.8rem;
+
+  .form-item {
+    margin-bottom: 0.5rem
+  }
+
+  .fieldgroup {
+    margin-bottom: 2.5rem;
+
+    legend {
+      margin-bottom: 1rem;
+    }
+  }
+
+  label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+    opacity: 0.7;
+    text-transform: uppercase;
+
+    &.option {
+      display: inline;
+      font-size: 1.4rem;
+      opacity: 1;
+      text-transform: none;
+    }
+  }
+
+  input[type='text'],
+  input[type='password'],
+  input[type='email'],
+  textarea {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  button,
+  input[type='submit'] {
+    appearance: none;
+    -webkit-appearance: none;
+    background: #222;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.8rem;
+    padding: 2.05rem 3rem;
+  }
+
+  .form-checkboxes {
+    margin-top: 0;
+    width: 100%;
+
+    .form-item {
+      margin-bottom: 0.5rem
+    }
+  }
+
+  .form-actions {
+    margin-top: 2.5rem;
+  }
+
+  p {
+    line-height: 2;
+  }
+
+  .form-item-test-optio {
+    margin: 0;
+    overflow: hidden;
+    height: 0;
+  }
+}

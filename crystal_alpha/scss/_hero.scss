@@ -1,0 +1,31 @@
+.region-hero {
+  background: var(--light);
+
+  img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-item .media > div {
+    width: 100%;
+  }
+
+  .carousel-caption {
+    background: var(--white);
+    color: var(--black);
+    padding: $spacer * 2;
+    top: 50%;
+    right: $spacer * 2;
+    bottom: auto;
+    left: auto;
+    text-align: left;
+    transform: translateY(-50%);
+    width: 35%;
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+}

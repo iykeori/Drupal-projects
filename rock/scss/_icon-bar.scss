@@ -1,0 +1,58 @@
+:root {
+  --icon-bar-border-color: #8d8e97;
+  --icon-bar-hover-color: var(--primary);
+}
+
+.icon-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+
+  & > * {
+    aspect-ratio: 1;
+    border: 1px solid var(--icon-bar-border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin: 0 $spacer / 2;
+    padding: 1.5rem;
+    text-align: center;
+    width: 26rem;
+
+    .media svg {
+      @extend .icon-large;
+    }
+  }
+
+  & > a {
+    color: var(--black);
+    padding: calc(1.5rem + 3px);
+
+    &:hover {
+      border-color: var(--icon-bar-hover-color);
+      border-width: 4px;
+      color: var(--icon-bar-hover-color);
+      --icon-color: var(--icon-bar-hover-color);
+      text-decoration: none;
+      padding: 1.5rem;
+    }
+  }
+
+
+  img {
+    width: auto;
+  }
+
+  @include media-breakpoint-down(sm) {
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+
+    & > * {
+      margin-bottom: $spacer;
+    }
+  }
+}

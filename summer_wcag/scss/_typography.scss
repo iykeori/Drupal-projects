@@ -1,0 +1,20 @@
+h1, .h1 {
+  margin-bottom: 20px;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100px;
+    border-bottom: 3px solid $primary;
+    margin: 15px 0 30px;
+  }
+}
+
+h2, .h2 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+  -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,124 @@
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  -webkit-font-smoothing: antialiased;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  em {
+    color: var(--secondary);
+    font-family: var(--headings-font-italized);
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  strong {
+    font-weight: var(--headings-font-weight);
+    -webkit-font-smoothing: auto;
+  }
+}
+
+.display-1 {
+  font-size: 5rem;
+  font-weight: var(--headings-font-weight);
+  @media (max-width: 767px) {
+    font-size: 2rem;
+  }
+}
+
+.display-2 {
+  font-family: var(--headings-font-italized);
+  font-size: 3rem;
+  font-weight: var(--headings-font-weight);
+  font-style: italic;
+  color: var(--secondary);
+  @media (max-width: 1000px) {
+      font-size: 3rem;
+  }
+}
+
+h1, .h1 {
+  font-family: var(--headings-font-family);
+  font-size: 3rem;
+  font-weight: var(--headings-font-weight);
+  line-height: 1.2;
+
+  @media (max-width: 1000px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2.6rem;
+  }
+
+  em {
+    color: var(--secondary);
+    font-family: var(--headings-font-italized);
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+
+  }
+}
+
+h1 small, .h1 small,
+h2 small, .h2 small,
+h3 small, .h3 small  {
+  display: block;
+  font-family: var(--headings-font-family);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  line-height: 3rem;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  line-height: 2.1rem;
+}
+
+h2, .h2 {
+  font-family: var(--headings-font-family);
+  font-size: 2.4rem;
+  font-weight: var(--headings-font-weight);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+
+  em {
+    color: var(--secondary);
+    font-family: var(--headings-font-italized);
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+h3, .h3 {
+  font-family: var(--headings-font-family);
+  font-size: 2.0rem;
+  font-weight: var(--headings-font-weight);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+h4, .h4 {
+  font-family: var(--headings-font-family);
+  font-size: 1.8rem;
+  font-weight: var(--headings-font-weight);
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--secondary);
+
+  &:hover{
+    color: var(--secondary);
+  }
+}

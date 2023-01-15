@@ -1,0 +1,25 @@
+.services {
+  margin: $spacer * 2 auto -$spacer * 2;
+  max-width: 1200px;
+
+  &-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: $spacer * 2;
+
+    div:first-child {
+      flex-shrink: 0;
+      margin-right: $spacer;
+      width: 9rem;
+
+      svg {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    div:last-child {
+    }
+  }
+}

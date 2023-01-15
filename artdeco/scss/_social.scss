@@ -1,0 +1,23 @@
+.social {
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 1em;
+  height: 1em;
+
+  &-facebook {
+    background: #3b5998 url('../images/facebook.svg') no-repeat center;
+    background-size: auto 60%;
+  }
+
+  &-google {
+    background: $gray-100 url('../images/google.png') no-repeat center;
+    background-size: auto 65%;
+    border: 1px solid $gray-200;
+  }
+
+  &-yelp {
+    background: #ce2200 url('../images/yelp.svg') no-repeat center;
+    background-size: auto 60%;
+  }
+}

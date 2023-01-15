@@ -1,0 +1,62 @@
+{# <nav class="navbar container-fluid {{ navbar_class }}">
+  <div class="navbar-brand">
+    {{ page.header }}
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarContent">
+    {{ page.primary_menu }}
+  </div>
+</nav>
+
+<main class="container-fluid">
+  {{ page.content }}
+</main>
+
+<footer class="container-fluid">
+  {{ page.footer }}
+</footer>
+
+{{ page.modals }} #}
+{% if page.alert %}
+  <div role="alert">
+    {{ page.alert }}
+  </div>
+{% endif %}
+<header class="page-header">
+  <div class="container-fluid">
+    {{ page.header_left }}
+    <div class="navbar {{ navbar_class }}">
+      <div class="collapse navbar-collapse" id="navbarContent">
+        {{ page.primary_menu }}
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    {{ page.header_right }}
+  </div>
+</header>
+
+{% if page.hero %}
+  <div role="complementary">
+    {{ page.hero }}
+  </div>
+{% endif %}
+
+{# {{ page.before_content }} #}
+
+<main>
+  <a id="main-content" tabindex="-1"></a>
+  {{ page.content }}
+</main>
+
+{# {{ page.after_content }} #}
+
+<footer class="page-footer">
+  {{ page.footer }}
+  {# {{ page.bottom }} #}
+</footer>
+
+{{ page.modals }}

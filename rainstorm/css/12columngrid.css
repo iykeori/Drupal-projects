@@ -1,0 +1,129 @@
+
+/* Grid
+-------------------------------------
+Columns Grid
+
+Columns 10 | 80 | 10 | 10 | 80 | 10 | 10 | 80 | 10 | 10 | 80 | 10 | 10 | 80 | 10 | 10 | 80 | 10 | 10 | 80 | 10 | 10 | 80 | 10 | 10 | 80 | 10 | 10 | 80 | 10 | 10 | 80 | 10 | 10 | 80 |  10
+Grid: 1200px
+*/
+.one-column {
+    float:left;
+    margin-left:.833333333333%;
+/* 10/1200 */
+    margin-right:.833333333333%;
+/* 10/1200 */
+    width:6.666666666667%
+/* 80/1200 */
+}
+
+.two-column {
+/*     background-color: pink; */
+    float:left;
+    margin-left:.833333333333%;
+/* 10/1200 */
+    margin-right:.833333333333%;
+/* 10/1200 */
+    width:15%
+/* 180/1200  */
+/* background-color: yellow; */
+}
+
+.three-column {
+    float:left;
+    margin-left:.833333333333%;
+/* 10/1200 */
+    margin-right:.833333333333%;
+/* 10/1200 */
+    width:23.333333333333%
+/* 280/1200  */
+}
+
+.four-column {
+    float:left;
+    margin-left:.833333333333%;
+/* 10/1200 */
+    margin-right:.833333333333%;
+/* 10/1200 */
+    width:31.666666666667%
+/* 380/1200  */
+}
+
+.five-column {
+    float:left;
+    margin-left:.833333333333%;
+/* 10/1200 */
+    margin-right:.833333333333%;
+/* 10/1200 */
+    width:40%
+/* 480/1200  */
+}
+
+.six-column {
+    float:left;
+    margin-left:.833333333333%;
+/* 10/1200 */
+    margin-right:.833333333333%;
+/* 10/1200 */
+    width:48.333333333333%
+/* 580/1200  */
+}
+
+.seven-column {
+    float:left;
+    margin-left:.833333333333%;
+/* 10/1200 */
+    margin-right:.833333333333%;
+/* 10/1200 */
+    width:56.666666666667%
+/* 680/1200  */
+}
+
+.eight-column {
+    float:left;
+    margin-left:.833333333333%;
+/* 10/1200 */
+    margin-right:.833333333333%;
+/* 10/1200 */
+    width:65%
+/* 780/1200  */
+}
+
+.nine-column {
+    float:left;
+    margin-left:.833333333333%;
+/* 10/1200 */
+    margin-right:.833333333333%;
+/* 10/1200 */
+    width:73.333333333333%
+/* 880/1200  */
+}
+
+.ten-column {
+    float:left;
+    margin-left:.833333333333%;
+/* 10/1200 */
+    margin-right:.833333333333%;
+/* 10/1200 */
+    width:81.666666666667%
+/* 980/1200  */
+}
+
+.eleven-column {
+    float:left;
+    margin-left:.833333333333%;
+/* 10/1200 */
+    margin-right:.833333333333%;
+/* 10/1200 */
+    width:90%
+/* 1180/1200  */
+}
+
+.twelve-column {
+    float:left;
+    width:98.333333333333%;
+/* 1180/1200 */
+    margin-left:.833333333333%;
+/* 10/1200 */
+    margin-right:.833333333333%
+/* 10/1200 */
+}

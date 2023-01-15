@@ -1,0 +1,45 @@
+:root {
+  --footer-color: var(--light);
+}
+
+.page-footer {
+  background: var(--footer-color);
+  padding-top: $spacer;
+  padding-bottom: $spacer;
+  text-align: center;
+
+  a[href^='tel:'], a[href^='tel:']:hover {
+    color: var(--dark);
+    text-decoration: none;
+  }
+
+  #map {
+    height: 500px;
+  }
+
+  .region-footer {
+    @extend .container;
+  }
+
+  .nav {
+    justify-content: center;
+    margin-bottom: 0.5rem;
+
+    &-item {
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+
+    &-link {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.region-after-content + .page-footer {
+  padding-top: $spacer * 2;
+}

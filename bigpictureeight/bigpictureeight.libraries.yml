@@ -1,0 +1,12 @@
+bigpictureeight:
+  version: 3.3.6
+  css:
+    theme:
+      css/16columngrid.css: {}
+      css/respond.css: {}
+  js:
+    js/main.js: {}
+    js/modernizr-custom.js: {}
+  dependencies:
+    - core/jquery
+

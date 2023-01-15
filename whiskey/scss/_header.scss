@@ -1,0 +1,17 @@
+:root {
+  --logo-max-height: 10rem;
+}
+
+.page-header {
+  padding: 2rem 0;
+
+  & > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #block-whiskey-branding img {
+    max-height: var(--logo-max-height);
+  }
+}

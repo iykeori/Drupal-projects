@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 163.94 163.94" style="enable-background:new 0 0 163.94 163.94;" xml:space="preserve">
+<style type="text/css">
+	.dental-tools-st0{fill:var(--icon-color-primary, #d1e3e5);}
+	.dental-tools-st1{fill:var(--icon-color-secondary, rgba(129,130,133,0.3));}
+	.dental-tools-st2{fill:none;stroke:#091821;stroke-width:2.8346;}
+	.dental-tools-st3{fill:#FFFFFF;stroke:#091821;stroke-width:2.8346;}
+</style>
+<g id="Layer_5">
+	<circle class="dental-tools-st0" cx="62.95" cy="88.83" r="60.41"/>
+	<circle class="dental-tools-st1" cx="114.89" cy="55.36" r="43.07"/>
+</g>
+<g id="Layer_3">
+	<g>
+		<polyline class="dental-tools-st2" points="55.5,80.02 55.5,55.82 40.61,40.92 55.5,26.04 		"/>
+		<line class="dental-tools-st3" x1="108.62" y1="80.02" x2="108.62" y2="55.82"/>
+		<path class="dental-tools-st3" d="M123.34,40.93c0,8.22-6.66,14.88-14.88,14.88c-8.23,0-14.89-6.67-14.89-14.88c0-8.23,6.65-14.89,14.89-14.89
+			C116.68,26.04,123.34,32.71,123.34,40.93z"/>
+		<path class="dental-tools-st3" d="M64.58,134.3c0,2-1.62,3.61-3.61,3.61H50.02c-1.99,0-3.6-1.61-3.6-3.61V83.62c0-2,1.61-3.61,3.6-3.61h10.95
+			c1.99,0,3.61,1.61,3.61,3.61V134.3z"/>
+		<path class="dental-tools-st3" d="M117.54,134.3c0,2-1.61,3.61-3.61,3.61h-10.96c-1.99,0-3.6-1.61-3.6-3.61V83.62c0-2,1.62-3.61,3.6-3.61h10.96
+			c1.99,0,3.61,1.61,3.61,3.61V134.3z"/>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,34 @@
+<header class="page-header">
+  <div class="container-fluid">
+    {{ page.header }}
+  </div>
+
+  <div class="navbar {{ navbar_class }}">
+    <div class="collapse navbar-collapse container-fluid" id="navbarContent">
+      {{ page.primary_menu }}
+    </div>
+    <a class="phone" href="tel:{{ practice.phone }}">{{ practice.phone }}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</header>
+
+{% if page.top %}
+  <div role="complementary" class="container-fluid">
+    {{ page.top }}
+  </div>
+{% endif %}
+
+<main class="container-fluid">
+  <a id="main-content" tabindex="-1"></a>
+  {{ page.content }}
+</main>
+
+{% if page.footer %}
+  <footer class="container-fluid">
+    {{ page.footer }}
+  </footer>
+{% endif %}
+
+{{ page.modals }}

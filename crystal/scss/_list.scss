@@ -1,0 +1,45 @@
+:root {
+    --checkmark-color: var(--primary);
+}
+
+ol, ul {
+  margin-bottom: 2.4rem;
+
+  li {
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.list {
+
+  &-style-checkmark {
+    font-size: 1.8rem;
+    padding-left: 0;
+
+    li {
+      list-style: none;
+      margin: 0.5rem 0;
+      padding-left: 1.5em;
+
+      &::before {
+        background-color: var(--checkmark-color);
+        content: '';
+        display: inline-block;
+        mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjMuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyODU1LjMgMjI1Mi4zIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyODU1LjMgMjI1Mi4zOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTE2Mi4yLDkwMS41YzQ4LjctNS4zLDEwMC42LDAsMTQ0LjIsNC41YzkzLjcsOS44LDE3Ny4zLDQ2LjcsMjI0LjUsMTMyLjJjMCwwLDMxNCw1NjcuNywzMTQsNTY3LjcKCQljNi4yLDExLjIsMjIsMTIsMjkuMywxLjZDOTczLjQsMTQ2Ni4xLDE1MzcuNSw2OTksMjUyMy45LDc3YzY4LjYtNDMuMywxNzAuNi05NiwyNTQtNzAuMWM0Mi42LDEzLjIsNzMuMSw1Miw3Nyw5Ni4zCgkJYzcuNSw4Ni44LTEwNCwxNDEuNy0xNjIuOSwxODcuN2MtNzAuNiw1NS4xLTE0MC4yLDExMS40LTIwOSwxNjguOGMtMTYwLjgsMTM0LjItMzE2LjQsMjc0LjctNDY1LjQsNDIxLjkKCQljLTMzMi4xLDMyOC4zLTYzOC4yLDY5My4yLTg1OC43LDExMDYuOGMtMTQuMywyNi44LTI4LjIsNTMuOC00MS43LDgxYy01NS42LDExMi4xLTE2OS45LDE4Mi45LTI5NC45LDE4Mi45CgkJYy0xMjAuMywwLTIzMS4xLTY1LjYtMjg4LjgtMTcxLjJjMCwwLTUxMy4xLTkzNy43LTUxMy43LTkzOC43Yy0zMi45LTYwLjEtMjQtMTM1LjUsMjEuNy0xODYuNkM3Mi4xLDkyMS40LDExNS43LDkwNi42LDE2Mi4yLDkwMS41CgkJIi8+CjwvZz4KPC9zdmc+Cg==);
+        mask-position: center;
+        mask-repeat: no-repeat;
+        margin-left: -1.5em;
+        margin-right: 0.5em;
+        position: relative;
+        top: 0.3rem;
+        vertical-align: top;
+        width: 1em;
+        height: 1em;
+      }
+
+      a {
+        color: var(--black);
+      }
+    }
+  }
+}

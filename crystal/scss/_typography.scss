@@ -1,0 +1,67 @@
+p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  -webkit-font-smoothing: antialiased;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.display-1 {
+  font-family: $font-family-serif;
+  font-size: 4rem;
+  font-weight: var(--headings-font-weight);
+}
+
+h1, .h1 {
+  font-size: 4rem;
+  font-weight: var(--headings-font-weight);
+
+  @media (max-width: 1000px) {
+    font-size: 3rem;
+  }
+}
+
+h1 small, .h1 small,
+h2 small, .h2 small {
+  display: block;
+  font-family: $font-family-sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  line-height: 2.5rem;
+}
+
+h2, .h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+h3, .h3 {
+  font-family: $font-family-sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* First h2 in content larger */
+
+.region-content div.text-center > h2:first-child,
+.region-content h2.text-center,
+.display-2 {
+  font-size: 3.4rem;
+
+  @media (max-width: 1000px) {
+    font-size: 3rem;
+  }
+}
+
+body.heading-font-jost {
+  --headings-font-family: 'Jost', sans-serif;
+  --headings-font-weight: 500;
+}

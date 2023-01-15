@@ -1,0 +1,126 @@
+.component-page{
+    .preview-show{
+        width: 100%;
+    }
+}
+.text-boxes{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media(max-width: 767px){
+      flex-direction: column;
+  }
+  
+  .text-box{
+    height: 380px;
+    max-width: 660px;
+    width: 100%;
+    margin: 55px 0;
+
+    .heading{
+        font-weight: 600;
+    }
+
+    textarea{
+        height: 100%;
+        width: 100%;
+        padding: 30px;
+        font-size: 15px;
+        font-weight: 400;
+        outline: none;
+        border: 1px solid $gray;
+        border-radius: 8px;
+        background: $gray;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+  }
+}
+
+.notes{
+    font-weight: 600;
+    p{
+        font-size: 13px;
+        font-weight: normal;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///// */

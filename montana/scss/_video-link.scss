@@ -1,0 +1,24 @@
+.video-link{
+  color: $color-black;
+  display: flex;
+  font-size: 2rem;
+  line-height: 3.5rem;
+
+  &:hover{
+    text-decoration: none;
+    color: $color-black;
+  }
+
+  &::before {
+    content: '';
+    background: url('../images/playicon.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-right: 0.75rem;
+    vertical-align: middle;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}

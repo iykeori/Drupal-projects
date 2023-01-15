@@ -1,0 +1,25 @@
+:root {
+  --hero-background: var(--light);
+  --hero-foreground: var(--dark);
+}
+
+.region-hero {
+  background: var(--hero-background);
+  overflow: hidden;
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+  p {
+    margin-bottom: 3rem;
+  }
+
+  h1 small {
+    color: var(--hero-foreground);
+  }
+
+  .carousel-item {
+    display: block;
+  }
+}

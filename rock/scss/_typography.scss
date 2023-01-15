@@ -1,0 +1,66 @@
+p {
+  font-size: 1.8rem;
+  margin-bottom: 2.6rem;
+  -webkit-font-smoothing: antialiased;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.display-1 {
+  font-family: var(--headings-font-family);
+  font-size: 3.6rem;
+  font-weight: 500;
+
+  small {
+    display: block;
+    font-family: var(--headings-font-family);
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2.5rem;
+  }
+}
+
+h1, .h1 {
+  font-size: 5rem;
+  font-weight: var(--headings-font-weight);
+  line-height: 1.1;
+}
+
+h1 small, .h1 small,
+h2 small, .h2 small {
+  display: block;
+  font-family: var(--headings-font-family);
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  line-height: 2.5rem;
+}
+
+h2, .h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+h3, .h3 {
+  font-family: var(--headings-font-family);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+h4, .h4 {
+  font-family: var(--headings-font-family);
+  font-size: 1.8rem;
+  margin-bottom: 2.6rem;
+  -webkit-font-smoothing: antialiased;
+}

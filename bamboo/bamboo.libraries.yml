@@ -1,0 +1,9 @@
+bamboo:
+  css:
+    theme:
+      //fonts.googleapis.com/css?family=Lato:300,400,700,900|Noto+Serif: { type: external }
+      css/theme.css: {}
+  js:
+    js/theme.js: {}
+  dependencies:
+    - core/jquery

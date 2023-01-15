@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 163.94 163.94" style="enable-background:new 0 0 163.94 163.94;" xml:space="preserve">
+<style type="text/css">
+	.emergency-st0{fill:var(--icon-color-primary, #d1e3e5);}
+	.emergency-st1{fill:var(--icon-color-secondary, rgba(129,130,133,0.3))}
+	.emergency-st2{fill:#FFFFFF;stroke:#313131;stroke-width:1.8264;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g id="Layer_4_copy_3">
+	<circle class="emergency-st0" cx="46.69" cy="55.08" r="44.16"/>
+	<circle class="emergency-st1" cx="106.98" cy="95.27" r="54.99"/>
+</g>
+<g id="Emergencies">
+	<polygon class="emergency-st2" points="120.02,68.74 95.2,68.74 95.2,43.92 68.74,43.92 68.74,68.74 43.92,68.74 43.92,95.2 68.74,95.2
+		68.74,120.02 95.2,120.02 95.2,95.2 120.02,95.2 	"/>
+</g>
+</svg>

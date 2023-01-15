@@ -1,0 +1,9 @@
+{%
+  set classes = [
+    'media'
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_suffix.contextual_links }}
+  {{ content }}
+</div>

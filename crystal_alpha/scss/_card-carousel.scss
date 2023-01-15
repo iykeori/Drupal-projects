@@ -1,0 +1,12 @@
+.card-carousel {
+  text-align: center;
+
+  &-items {
+    display: flex;
+    overflow: hidden;
+
+    & > [class*='col'] {
+      padding: 0 !important;
+    }
+  }
+}

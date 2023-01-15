@@ -1,0 +1,29 @@
+name: Black Marble
+type: theme
+core: 8.x
+core_version_requirement: ^8 || ^9
+version: '8.x-1.0'
+
+base theme: bootstrap
+
+libraries:
+  - bootstrap/nav-side
+
+libraries-override:
+  bootstrap/bootstrap:
+    css:
+      theme:
+        css/bootstrap.css: css/theme.css
+
+regions:
+  aboveheader: 'Above header'
+  header: 'Header left'
+  primary_menu: 'Primary menu'
+  header_right: 'Header right'
+  hero: 'Hero'
+  above_content: 'Above content'
+  content: 'Content'
+  sidebar: 'Sidebar'
+  below_content: 'Below content'
+  footer: 'Footer'
+  modals: 'Modals'

@@ -1,0 +1,68 @@
+<?php
+
+use Drupal\Component\Utility\Html;
+use Drupal\Core\Menu\MenuTreeParameters;
+
+function bigpictureeight_preprocess_page(array &$variables) {
+
+    // Load main menu
+    $menu_tree = \Drupal::menuTree();
+    $menu_tree_parameters = new MenuTreeParameters();
+    $tree = \Drupal::menuTree()->load('main', $menu_tree_parameters);
+    $manipulators = array(
+      array('callable' => 'menu.default_tree_manipulators:checkAccess'),
+      array('callable' => 'menu.default_tree_manipulators:generateIndexAndSort'),
+    );
+    $tree = $menu_tree->transform($tree, $manipulators);
+
+    // Render submenus as variables for template
+    foreach ($tree as $data) {
+      if ($data->hasChildren) {
+        $name = $data->link->getTitle();
+        $name = str_replace(' ', '_', $name);
+        $name = strtolower($name);
+        $name = $name . '_menu';
+        $menu = $menu_tree->build($data->subtree);
+        $markup = \Drupal::service('renderer')->render($menu);
+        $variables[$name] = array(
+          '#type' => 'markup',
+          '#markup' => $markup
+        );
+      }
+    }
+
+    return $variables;
+}
+
+function bigpictureeight_preprocess_html(&$variables) {
+  $path = \Drupal::request()->getPathInfo();
+  $node = \Drupal::request()->attributes->get('node');
+  $variables['path_info']['args'] = Html::cleanCssIdentifier(ltrim($path, '/'));
+  $variables['path_info']['news'] = strpos($path, '/news') !== FALSE;
+  if (!empty($node)) $variables['path_info']['nid'] = $node->id();
+}
+
+function bigpictureeight_form_search_block_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $form['actions']['submit']['#type'] = 'image_button';
+  $form['actions']['submit']['#src'] = drupal_get_path('theme', 'bigpictureeight') . '/images/search.png';
+  $form['keys']['#placeholder'] = 'Search';
+}
+
+
+/**
+ * Include site.js and sites.css files.
+ */
+function bigpictureeight_library_info_alter(&$libraries, $extension) {
+  if ($extension == 'bigpictureeight' && isset($libraries['bigpictureeight'])) {
+    $fs = \Drupal::service('file_system');
+    $path = \Drupal\Core\StreamWrapper\PublicStream::basePath();
+    if (file_exists($fs->realpath('public://site.css'))) {
+      $libraries['bigpictureeight']['css']['theme']["/$path/site.css"] = array();
+    }
+    if (file_exists($fs->realpath('public://site.js'))) {
+      $libraries['bigpictureeight']['js']["/$path/site.js"] = array();
+    }
+  }
+}
+
+?>

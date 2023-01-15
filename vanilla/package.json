@@ -1,0 +1,22 @@
+{
+  "name": "vanilla",
+  "version": "1.0.0",
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "bootstrap": "^4.1.3",
+    "node-sass": "^4.9.2",
+    "onchange": "^4.0.0",
+    "postcss-cli": "^6.0.1"
+  },
+  "scripts": {
+    "build": "node-sass scss/theme.scss css/theme.css",
+    "postbuild": "postcss --use autoprefixer -o css/theme.css css/theme.css",
+    "deploy": "npm run build && rsync -r --exclude 'node_modules' --exclude '.sass-cache' --exclude 'scss' --exclude 'package*.json' ./* hosting.optiopublishing.com:/var/aegir/platforms/optio-9-dev/themes/${npm_package_name}",
+    "watch": "onchange './scss/*' './js/*' './templates/*' -- npm run deploy"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "IE 10"
+  ]
+}

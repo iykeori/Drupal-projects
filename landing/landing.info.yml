@@ -1,0 +1,20 @@
+name: King's Landing
+description: 'Simple theme for practice landing page.'
+type: theme
+core: 8.x
+core_version_requirement: ^8 || ^9
+version: '8.x-1.0'
+
+base theme: bootstrap
+
+libraries-override:
+  bootstrap/bootstrap:
+    css:
+      theme:
+        css/bootstrap.css: css/theme.css
+
+regions:
+  top: 'Top'
+  content: 'Content'
+  bottom: 'Bottom'
+  modals: 'Modals'

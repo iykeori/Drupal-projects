@@ -1,0 +1,40 @@
+{% if page.alert %}
+  <div role="alert">
+    {{ page.alert }}
+  </div>
+{% endif %}
+
+{{ page.top }}
+
+<header class="page-header">
+  <div class="container">
+    {{ page.header }}
+    <div class="navbar {{ navbar_class }}">
+      <div class="collapse navbar-collapse" id="navbarContent">
+        {{ page.primary_menu }}
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+{% if page.hero %}
+  <div role="complementary">
+    {{ page.hero }}
+  </div>
+{% endif %}
+
+<main>
+  <a id="main-content" tabindex="-1"></a>
+  {{ page.content }}
+</main>
+
+{{ page.after_content }}
+
+<footer class="page-footer">
+  {{ page.footer }}
+</footer>
+
+{{ page.modals }}

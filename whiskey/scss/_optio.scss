@@ -1,0 +1,15 @@
+.optio-thumbnail {
+
+  a.optioThumbnailLink {
+    border: 0;
+    font-family: var(--body-font-family);
+    font-size: 1.8rem;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    width: 100%;
+
+    .optioVideoCategory {
+      display: none;
+    }
+  }
+}

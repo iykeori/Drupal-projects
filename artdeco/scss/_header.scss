@@ -1,0 +1,15 @@
+.region-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: $grid-gutter-width 0;
+
+  &:first-child {
+    margin-right: auto;
+  }
+}
+
+#block-sitebranding img {
+  max-width: 100%
+}

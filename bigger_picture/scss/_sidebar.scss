@@ -1,0 +1,117 @@
+:root {
+  --sidebar-callout-background: var(--primary);
+  --sidebar-callout-foreground: var(--white);
+  --sidebar-menu-foreground: var(--primary);
+  --sidebar-menu-background: var(--page-background);
+  --sidebar-menu-rule-color: rgba(0, 0, 0, 0.2);
+}
+
+.page-sidebar {
+  margin-left: 2rem;
+  flex-basis: 28rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+
+  .nav {
+    flex-direction: column;
+
+    &-item {
+      border-bottom: 1px solid var(--sidebar-menu-rule-color);
+      display: block;
+
+      a {
+        color: var(--sidebar-menu-foreground);
+        padding: 1rem;
+
+        &.is-active {
+          background: var(--sidebar-menu-foreground);
+          color: var(--sidebar-menu-background);
+        }
+      }
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .block, nav {
+    margin-bottom: 4rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.sidebar-callout {
+  background: var(--sidebar-callout-background);
+  color: var(--sidebar-callout-foreground);
+
+  h2, .h2, h3, .h3 {
+    color: inherit;
+  }
+
+  &-image {
+    display: block;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      transition: all 300ms;
+      width: 100%;
+      height: auto;
+    }
+
+    span {
+      background: rgba(0, 0, 0, 0.2);
+      border: 1px solid #fff;
+      color: var(--sidebar-callout-foreground);
+      display: block;
+      padding: 0.75rem 2rem;
+      position: absolute;
+      left: 2rem;
+      bottom: 2rem;
+      right: 2rem;
+      text-align: center;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+  }
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 2rem;
+
+    h2 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    a {
+      color: var(--sidebar-callout-foreground) !important;
+      text-decoration: none;
+    }
+
+    .btn {
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 4rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      line-height: 1;
+      margin-top: 1rem;
+      padding: 0.6rem 1.5rem;
+      text-transform: uppercase;
+    }
+  }
+}

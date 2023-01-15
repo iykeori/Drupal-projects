@@ -1,0 +1,40 @@
+:root {
+  --tint: rgba(0, 0, 0, 0.3);
+}
+
+#block-pagetitle,
+#block-crystal-alpha-pagetitle {
+  background-image: url('/files/images/title-background.jpg');
+  background-position: center;
+  background-size: cover;
+  padding: $spacer * 4;
+  position: relative;
+
+  .display-1 {
+    color: var(--white);
+    font-size: 4rem;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    background-color: var(--tint);
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: $spacer * 2 $spacer;
+
+    h1 {
+      font-size: 3.2rem;
+    }
+  }
+}

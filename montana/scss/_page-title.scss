@@ -1,0 +1,68 @@
+:root {
+  --tint: rgba(0, 0, 0, 0.3);
+  --page-title-background: url('/files/images/block-background-pattern.png');
+  --page-title-background-color: var(--secondary);
+  --page-title-color: var(--white);
+  --page-subtitle-color: var(--white);
+}
+
+.path-internal .region-hero {
+  background: var(--page-title-background);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+
+  @media (max-width: 767px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+#block-pagetitle {
+  padding-left: $spacer;
+  padding-right: $spacer;
+  position: relative;
+  width: 100%;
+  max-width: $container-max-width;
+  min-height: 150px;
+
+  @include media-breakpoint-down(sm) {
+    padding-left: $spacer / 2;
+    padding-right: $spacer / 2;
+    min-height: 100px;
+  }
+
+  .h1 {
+    background-color: var(--page-title-background-color);
+    color: var(--page-title-color);
+    font-size: 3.4rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    padding: 1rem 2rem;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    z-index: 1;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 2.6rem;
+    }
+
+    small {
+      color: var(--page-subtitle-color);
+      font-size: 2rem;
+      font-weight: normal;
+      letter-spacing: normal;
+      text-transform: none;
+
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+  }
+}

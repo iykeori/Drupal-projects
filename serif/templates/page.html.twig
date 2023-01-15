@@ -1,0 +1,32 @@
+<nav class="navbar navbar-light navbar-expand-lg container-fluid">
+  <div class="navbar-brand">
+    {{ page.header }}
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse navbar-right" id="navbarContent">
+    {{ page.primary_menu }}
+  </div>
+</nav>
+
+<div class="container-fluid px-md-5">
+  {% if is_front %}
+    {{ page.hero }}
+    {{ page.callouts }}
+  {% endif %}
+</div>
+
+<main class="container-fluid px-md-5">
+  {{ page.content }}
+</main>
+
+<div class="container-fluid px-md-5">
+  {{ page.bottom }}
+</div>
+
+<footer class="container-fluid p-md-5 text-light bg-dark">
+  {{ page.footer }}
+</footer>
+
+{{ page.modals }}

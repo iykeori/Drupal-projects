@@ -1,0 +1,134 @@
+body > header {
+
+  .region-primary_menu {
+    background: #dadada;
+    clear: both;
+    padding: 5px 0;
+
+    nav {
+      border-top: 1px solid rgba(255, 255, 255, 0.4);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      padding: 7px 0;
+
+      > ul {
+        @include wrapper;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        list-style: none;
+
+        a {
+          border-radius: 4px;
+          color: #fff;
+          display: inline-block;
+          font-size: 2.1rem;
+          overflow: hidden;
+          padding: 10px 30px;
+          text-decoration: none;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          &.is-active {
+            background: rgba(0, 0, 0, 0.1);
+          }
+        }
+
+        .menu-item--active-trail a {
+          background: rgba(0, 0, 0, 0.1);          
+        }
+      }
+    }
+  }
+}
+
+@mixin mobile-nav {
+  .region-primary_menu {
+    background: #444;
+    box-shadow: inset 15px 0px 20px -15px rgba(0, 0, 0, 0.75);
+    padding: 40px 20px;
+    position: fixed;
+    top: 0;
+    right: -27rem;
+    transition: right 300ms;
+    width: 27rem;
+    height: 100%;
+    z-index: 100;
+
+    nav {
+      border: 0;
+      padding: 0;
+
+      > ul {
+        display: block;
+        width: 100%;
+
+        li {
+          margin-bottom: 1rem;
+        }
+
+        a {
+          display: block;
+          font-size: 1.8rem;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+
+  .region-header > .content-wrapper::after {
+    background: url('../images/mobile-nav.png');
+    background-size: 100% 100%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    content: ' ';
+    cursor: pointer;
+    display: inline-block;
+    flex: none;
+    margin-left: 15px;
+    width: 5.7rem;
+    height: 5.7rem;
+    vertical-align: middle;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+}
+
+body {
+  position: relative;
+  left: 0;
+  transition: left 300ms;
+}
+
+@media screen and (max-width: 1200px) {
+  body > header {
+    @include mobile-nav;
+  }
+
+  body.mobile-nav--open {
+    left: -27rem;
+    & > header .region-primary_menu {
+      right: 0;
+    }
+  }
+}
+
+body.mobile-nav {
+  & > header {
+    @include mobile-nav;
+  }
+
+  &.mobile-nav--open {
+    left: -27rem;
+    & > header .region-primary_menu {
+      right: 0;
+    }
+  }
+}

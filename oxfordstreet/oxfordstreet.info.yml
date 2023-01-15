@@ -1,0 +1,33 @@
+name: Oxford Street
+type: theme
+core: 8.x
+version: '8.x-1.0'
+core_version_requirement: ^8 || ^9
+base theme: bootstrap
+
+libraries:
+  - bootstrap/nav-side
+
+libraries-override:
+  bootstrap/bootstrap:
+    css:
+      theme:
+        css/bootstrap.css: css/theme.css
+  bootstrap/nav-side:
+    js:
+      js/nav-side.js: js/nav-side.js
+
+regions:
+  aboveheader: 'Above Header'
+  header: 'Header left'
+  primary_menu: 'Primary menu'
+  header_right: 'Header right'
+  hero: 'Hero'
+  above_content: 'Above content'
+  content: 'Content'
+  sidebar: 'Sidebar'
+  below_content: 'Below content'
+  contact_bar: 'Contact bar'
+  footer: 'Footer'
+  below_footer: 'Below footer'
+  modals: 'Modals'

@@ -1,0 +1,36 @@
+.container-fluid {
+  padding: $spacer * 2 $spacer * 3;
+  max-width: 130rem;
+
+  @include media-breakpoint-down(md) {
+    padding: $spacer * 2 !important;
+  }
+}
+
+.region-hero {
+  @extend .container-fluid;
+  margin-top: 1px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.region-sidebar-first {
+  padding-top: $spacer * 3;
+  padding-bottom: $spacer * 3;
+  padding-right: $spacer * 4;
+}
+
+.region-before-content {
+  @extend .container-fluid;
+  padding-bottom: 0;
+}
+
+.region-after-content {
+  @extend .container-fluid;
+  padding-top: 0;
+  padding-bottom: $spacer * 3;
+}
+
+main {
+  @extend .container-fluid;
+}

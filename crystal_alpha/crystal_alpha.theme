@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * Set title in page title block.
+ */
+function crystal_alpha_preprocess_page_title(&$variables) {
+  $menu_tree = Drupal::menuTree();
+  $parameters = $menu_tree->getCurrentRouteMenuTreeParameters('main');
+  $tree = $menu_tree->load('main', $parameters);
+  foreach ($tree as $data) {
+    if ($data->inActiveTrail) {
+      $title = $data->link->getTitle();
+    }
+  }
+  if (!empty($title)) {
+    $variables['title'] = $title;
+  }
+}
+
+?>

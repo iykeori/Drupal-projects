@@ -1,0 +1,14 @@
+.office-hours {
+
+  tr {
+    border-bottom: 1px solid var(--border-color);
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  th {
+    padding: 0.5rem 2rem 0.5rem 0;
+  }
+}

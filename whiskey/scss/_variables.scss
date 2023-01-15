@@ -1,0 +1,34 @@
+/* Override Bootstrap variables here */
+
+:root {
+  --page-background: white;
+  --page-foreground: var(--dark);
+  --border-color: #ced4da;
+}
+
+$theme-colors: (
+  'primary': #77ac2d,
+  'secondary': #a56613,
+  'dark': #4b4c4f,
+  'light': #e8f2d8
+);
+
+$btn-border-radius: 100rem;
+$btn-border-width: 2px;
+$btn-font-family: var(--body-font-family);
+$btn-font-size: 1.8rem;
+$btn-line-height: 1;
+$btn-padding-x: 3rem;
+$btn-padding-y: 1.6rem;
+
+$font-family-sans-serif: var(--body-font-family);
+$font-size-base: 1.6rem;
+
+$headings-font-family: var(--headings-font-family);
+$headings-font-weight: var(--headings-font-weight);
+
+$grid-gutter-width: 50px;
+$spacer: 50px;
+$container-max-width: 1400px;
+
+$input-border-color: var(--border-color);

@@ -1,0 +1,66 @@
+:root {
+  --after-content-backgroud: var(--light);
+  --after-content-backgroud-image: url('/files/images/background-image.jpg');
+}
+
+.region-after-content {
+  background: var(--after-content-backgroud);
+  position: relative;
+
+  &::after {
+    background-image: var(--after-content-backgroud-image);
+    background-size: cover;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(50% + #{$spacer});
+  }
+
+  .webform-submission-form {
+    background: var(--white);
+    margin: 0 auto;
+    padding: $spacer * 1.5;
+    position: relative;
+    transform: translateY($spacer);
+    width: 90%;
+    max-width: 70rem;
+    z-index: 10;
+
+    h2, p, .form-actions {
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 3.5rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: $spacer * 0.75;
+    }
+  }
+}
+
+.path-webform {
+
+  main {
+    background: var(--secondary-page-background-color);
+  }
+
+  .region-content .block {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+
+  .webform-confirmation {
+    @extend .layout-narrow;
+    text-align: center;
+
+    &__back a {
+      @extend .btn;
+      @extend .btn-primary;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+#block-montana-branding {
+  @media (max-width: 767px) {
+    padding: 0px;
+  }
+}
+
+#block-montana-content {
+  @media (max-width: 767px){
+    .media.w-100 img {
+      width: 90%;
+      height: auto;
+    }
+  }
+}
+
+.path-frontpage {
+  h1, .h1 {
+    font-size: 3.2rem;
+  }
+
+  h2, .h2 {
+    font-size: 2.5rem;
+  }
+
+  h3, .h3 {
+    font-size: 2.2rem;
+  }
+}
+
+.services-list {
+  padding: 80px;
+
+  @media (max-width: 767px) {
+    padding: 45px;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+  }
+}

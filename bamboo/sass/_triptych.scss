@@ -1,0 +1,56 @@
+.region-triptych {
+  background: #bbb;
+  color: #fff;
+  padding: 17rem 0 7rem;
+
+  > .content-wrapper {
+    @include wrapper;
+    @include clearfix;
+  }
+
+  .block {
+    float: left;
+    padding: 0 3rem;
+    width: 33.33%;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 0.7em;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      font-size: 2.2rem;
+    }
+  }
+
+  p {
+    font-size: 1.8rem;
+    line-height: 2;
+    text-align: center;
+  }
+
+  a {
+    margin-top: 1.8em;
+    @extend .button;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+
+  .region-triptych {
+
+    .block {
+      float: left;
+      margin-bottom: 7rem;
+      padding: 0;
+      width: 100%;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

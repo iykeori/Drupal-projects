@@ -1,0 +1,43 @@
+@import 'fonts';
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'accordion';
+@import 'alert';
+@import 'block';
+@import 'blog';
+@import 'button';
+@import 'colors';
+@import 'footer';
+@import 'form';
+@import 'header';
+@import 'hero';
+@import 'icon-bar';
+@import 'icons';
+@import 'layout';
+@import 'list';
+@import 'office-hours';
+@import 'map';
+@import 'media';
+@import 'nav';
+@import 'services';
+@import 'team';
+@import 'top';
+@import 'typography';
+@import 'videos';
+@import 'video-link';
+
+:root {
+  --link-color: var(--primary);
+}
+
+html, body {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.8rem;
+}
+
+a {
+  color: var(--link-color);
+}

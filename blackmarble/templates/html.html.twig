@@ -1,0 +1,34 @@
+{%
+  set body_classes = [
+    page.notice ? 'notice',
+    not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
+    path_info.args ? 'path-' ~ path_info.args,
+    path_info.nid ? 'node-' ~  path_info.nid,
+    node_type ? 'page-node-type-' ~ node_type|clean_class,
+  ]
+%}
+<!DOCTYPE html>
+<html{{ html_attributes }}>
+  <head>
+    <head-placeholder token="{{ placeholder_token|raw }}">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token|raw }}">
+    <js-placeholder token="{{ placeholder_token|raw }}">
+    <link rel="preload" as="font" href="/themes/blackmarble/fonts/montserrat-v15-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" href="/themes/blackmarble/fonts/montserrat-v15-latin-100.woff2" crossorigin>
+    <link rel="preload" as="font" href="/themes/blackmarble/fonts/montserrat-v15-latin-300.woff2" crossorigin>
+    <link rel="preload" as="font" href="/themes/blackmarble/fonts/montserrat-v15-latin-500.woff2" crossorigin>
+    <link rel="preload" as="font" href="/themes/blackmarble/fonts/montserrat-v15-latin-600.woff2" crossorigin>
+    <link rel="preload" as="font" href="/themes/blackmarble/fonts/montserrat-v15-latin-700.woff2" crossorigin>
+  </head>
+  <body{{ attributes.addClass(body_classes) }}>
+    <a href="#main-content" class="visually-hidden focusable">
+      {{ 'Skip to main content'|t }}
+    </a>
+    {{ page_top }}
+    {{ page }}
+    {{ page_bottom }}
+    <js-bottom-placeholder token="{{ placeholder_token|raw }}">
+  </body>
+</html>

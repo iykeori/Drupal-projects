@@ -1,0 +1,40 @@
+@import 'fonts';
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'accordion';
+@import 'alert';
+@import 'block';
+@import 'button';
+@import 'carousel';
+@import 'footer';
+@import 'form';
+@import 'front';
+@import 'header';
+@import 'hero';
+@import 'hero-grid';
+@import 'icon';
+@import 'layout';
+@import 'list';
+@import 'logo-carousel';
+@import 'media';
+@import 'nav';
+@import 'page-title';
+@import 'random';
+@import 'service';
+@import 'testimonial';
+@import 'typography';
+@import 'video-link';
+
+html, body {
+  font-size: 10px;
+}
+
+body {
+  background: var(--page-background);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+main {
+  background: var(--content-background);
+}

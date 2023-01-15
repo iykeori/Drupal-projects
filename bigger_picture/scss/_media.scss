@@ -1,0 +1,27 @@
+.media {
+
+  &.w-100 {
+    justify-content: stretch;
+
+    div {
+      flex-grow: 1;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &.h-100 {
+
+    div {
+      height: 100%;
+    }
+
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}

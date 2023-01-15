@@ -1,0 +1,19 @@
+.services {
+
+  &-item {
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+
+    &:last-child {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    a {
+      color: inherit !important;
+      text-decoration: none !important;
+    }
+  }
+}

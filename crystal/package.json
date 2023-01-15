@@ -1,0 +1,23 @@
+{
+  "name": "crystal",
+  "version": "1.0.0",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "bootstrap": "^4.1.3",
+    "node-sass": "^7.0.1",
+    "onchange": "^7.1.0",
+    "postcss-cli": "^9.1.0"
+  },
+  "scripts": {
+    "build": "node-sass scss/theme.scss css/theme.css",
+    "postbuild": "postcss --use autoprefixer -o css/theme.css css/theme.css",
+    "deploy": "npm run build && rsync -r --exclude 'node_modules' --exclude '.sass-cache' --exclude 'scss' --exclude 'package*.json' ./* hosting.optiopublishing.com:/var/aegir/platforms/optio-9-dev/themes/${npm_package_name} && npm run cache",
+    "watch": "onchange './scss/*' './js/*' './templates/*' -- npm run deploy",
+    "cache": "if [ $npm_config_domain ]; then ssh hosting.optiopublishing.com \"cd /var/aegir/platforms/optio-9-dev/sites/${npm_config_domain}; drush cr\"; fi"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "IE 10"
+  ]
+}

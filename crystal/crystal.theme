@@ -1,0 +1,36 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Theme\ThemeSettings;
+use Drupal\system\Form\ThemeSettingsForm;
+
+/**
+ * Alter theme settings form.
+ */
+function crystal_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['crystal_settings']['typography'] = array(
+    '#type' => 'details',
+    '#title' => t('Typography'),
+    '#open' => TRUE,
+    'heading_font' => [
+      '#type' => 'select',
+      '#title' => t('Heading font'),
+      '#options' => [
+        'default' => 'Default',
+        'jost' => 'Jost'
+      ],
+      '#default_value' => theme_get_setting('heading_font') ?? 'default'
+    ]
+  );
+}
+
+/**
+ * Add classes to body.
+ */
+function crystal_preprocess_html(&$variables) {
+  $heading_font = theme_get_setting('heading_font');
+  if ($heading_font != 'default') {
+    $variables['attributes']['class'][] = 'heading-font-' .
+      strtolower(filter_var($heading_font, FILTER_SANITIZE_STRING));
+  }
+}

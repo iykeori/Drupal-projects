@@ -1,0 +1,29 @@
+.region-content {
+
+  .block {
+    @extend .container;
+    overflow: hidden;
+
+    &:first-child {
+      padding-top: $spacer * 2;
+
+      @include media-breakpoint-down(sm) {
+        padding-top: $spacer;
+      }
+    }
+
+    &:last-child {
+      padding-bottom: $spacer * 2;
+
+      @include media-breakpoint-down(sm) {
+        padding-bottom: $spacer;
+      }
+    }
+  }
+
+  .block-full-width {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: none !important;
+  }
+}

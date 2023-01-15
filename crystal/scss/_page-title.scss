@@ -1,0 +1,41 @@
+:root {
+  --tint: rgba(0, 0, 0, 0.3);
+  --page-title-background: url('/files/images/title-background.jpg');
+  --page-title-color: inherit;
+}
+
+.path-internal .region-hero {
+  background: var(--page-title-background);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: $spacer * 4;
+  position: relative;
+  text-align: center;
+
+  @include media-breakpoint-down(sm) {
+    padding: $spacer * 2;
+  }
+}
+
+#block-pagetitle {
+
+  h1 {
+    color: var(--page-title-color);
+    font-size: 4rem;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    h1 {
+      font-size: 3.2rem;
+    }
+  }
+}

@@ -1,0 +1,143 @@
+<?php
+
+use Drupal\block\Entity\Block;
+use Drupal\Component\Utility\Html;
+use Drupal\Core\Form;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Theme\ThemeSettings;
+use Drupal\system\Form\ThemeSettingsForm;
+
+/**
+ * Load custom variables.
+ */
+function bootstrap_preprocess_page(&$variables) {
+  $nav_breakpoint = _bootstrap_nav_breakpoint();
+  $nav_color = _bootstrap_nav_color();
+  $navbar_class = "navbar-expand-{$nav_breakpoint} navbar-{$nav_color}";
+  $variables['navbar_class'] = $navbar_class;
+
+  // Practice information
+  $config = \Drupal::config('optio_tokens.settings');
+  if ($config) {
+    $variables['practice']['name'] = $config->get('practice.name');
+    $variables['practice']['address'] = $config->get('practice.address');
+    $variables['practice']['city'] = $config->get('practice.city');
+    $variables['practice']['province'] = $config->get('practice.province');
+    $variables['practice']['country'] = $config->get('practice.country');
+    $variables['practice']['postal_code'] = $config->get('practice.postal_code');
+    $variables['practice']['phone'] = $config->get('practice.phone');
+    $variables['practice']['fax'] = $config->get('practice.fax');
+    $variables['practice']['email'] = $config->get('practice.email');
+  }
+}
+
+/**
+ * Add classes to body.
+ */
+function bootstrap_preprocess_html(&$variables) {
+  $path = \Drupal::request()->getPathInfo();
+  $variables['path_info']['args'] = Html::cleanCssIdentifier(ltrim($path, '/'));
+  $regions = \Drupal::service('theme.manager')->getActiveTheme()->getRegions();
+  foreach ($regions as $region) {
+    if (!empty($variables['page'][$region])) {
+      $variables['attributes']['class'][] = 'has-region-' . $region;
+    }
+  }
+  $nav_breakpoint = _bootstrap_nav_breakpoint();
+  $variables['attributes']['class'][] = "navbar-breakpoint-{$nav_breakpoint}";
+}
+
+/**
+ * Include site.js and site.css files.
+ */
+function bootstrap_library_info_alter(&$libraries, $extension) {
+  if ($extension == 'bootstrap' && isset($libraries['bootstrap'])) {
+    $fs = \Drupal::service('file_system');
+    $path = \Drupal\Core\StreamWrapper\PublicStream::basePath();
+    if (file_exists($fs->realpath('public://site.css'))) {
+      $libraries['bootstrap']['css']['theme']["/$path/site.css"] = array(
+        'weight' => 10000
+      );
+    }
+    if (file_exists($fs->realpath('public://site.js'))) {
+      $libraries['bootstrap']['js']["/$path/site.js"] = array();
+    }
+  }
+}
+
+/**
+ * Add theme suggestions for region specific blocks.
+ */
+function bootstrap_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+  if (!empty($variables['elements']['#id'])) {
+    $block = Block::load($variables['elements']['#id']);
+    $suggestions[] = 'block__' . $block->getRegion();
+  }
+}
+
+/**
+ * Alter theme settings form.
+ */
+function bootstrap_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['bootstrap_settings']['bootstrap_classes'] = array(
+    '#type' => 'details',
+    '#title' => t('Bootstrap configuration'),
+    '#open' => TRUE,
+    'nav_breakpoint' => [
+      '#type' => 'select',
+      '#title' => t('Navbar breakpoint'),
+      '#options' => [
+        'sm' => 'Small (576px)',
+        'md' => 'Medium (768px)',
+        'lg' => 'Large (992px)',
+        'xl' => 'Extra large (1200px)'
+      ],
+      '#default_value' => _bootstrap_nav_breakpoint(),
+    ],
+    'nav_color' => [
+      '#type' => 'select',
+      '#title' => t('Navbar color'),
+      '#options' => [
+        '' => 'Default',
+        'light' => 'Light',
+        'dark' => 'Dark'
+      ],
+      '#default_value' => _bootstrap_nav_color(),
+    ]
+  );
+}
+
+function _bootstrap_nav_breakpoint() {
+  $breakpoint = theme_get_setting('nav_breakpoint');
+  if ($breakpoint == NULL) {
+    $navbar_class = theme_get_setting('navbar_class') ?? theme_get_setting('navbar_class', 'bootstrap');
+    if (strpos($navbar_class, 'navbar-expand-sm') > -1) $breakpoint = 'sm';
+    if (strpos($navbar_class, 'navbar-expand-md') > -1) $breakpoint = 'md';
+    if (strpos($navbar_class, 'navbar-expand-lg') > -1) $breakpoint = 'lg';
+    if (strpos($navbar_class, 'navbar-expand-xl') > -1) $breakpoint = 'xl';
+  }
+  return $breakpoint;
+}
+
+function _bootstrap_nav_color() {
+  $color = theme_get_setting('nav_color');
+  if ($color == NULL) {
+    $color = '';
+    $navbar_class = theme_get_setting('navbar_class') ?? theme_get_setting('navbar_class', 'bootstrap');
+    if (strpos($navbar_class, 'navbar-light') > -1) $color = 'light';
+    if (strpos($navbar_class, 'navbar-dark') > -1) $color = 'dark';
+  }
+  return $color;
+}
+
+/**
+ * Output structured data.
+ */
+function bootstrap_preprocess_field(&$variables) {
+  if ($variables['element']['#field_name'] == 'field_structured_data') {
+    $variables['items'][0]['content']['#template'] =
+      '<script type="application/ld+json">{{ value | raw }}</script>';
+  }
+}
+
+?>

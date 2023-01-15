@@ -1,0 +1,14 @@
+a.optioThumbnailLink {
+  border: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+
+  .optioVideoCategory {
+    display: none !important;
+  }
+
+  .optioVideoTitle {
+    font-family: $font-family-serif !important;
+    font-size: 1.1rem !important;
+  }
+}

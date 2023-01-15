@@ -1,0 +1,31 @@
+.border-primary {
+  border-color: var(--primary) !important;
+}
+
+.bg-light {
+  background: var(--light) !important;
+}
+
+.hr {
+  position: relative;
+  text-align: center;
+
+  h2 {
+    background: #fff;
+    display: inline-block;
+    margin: 0;
+    padding: 0 3rem;
+    position: relative;
+    z-index: 10;
+  }
+
+  &::after {
+    background: var(--primary);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    content: '';
+    width: 100%;
+    height: 1px;
+  }
+}

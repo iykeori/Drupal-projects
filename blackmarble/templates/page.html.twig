@@ -1,0 +1,62 @@
+{% if page.aboveheader is empty %}
+    {% else %}
+   	 	<div class="aboveheaderbar">
+    	{{ page.aboveheader }}
+	</div>
+{% endif %}
+    
+<header class="header">  
+  <div class="navbar {{ navbar_class }} container">
+    <div class="navbar-brand pr-1">
+      {{ page.header }}
+    </div>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      {{ page.primary_menu }}
+    </div>
+    {{ page.header_right }}
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</header>
+
+<div class="bg-dark clearfix">
+  {{ page.hero }}
+</div>
+
+<div class="container-fluid p-0 {% if page.hero is empty %} no-hero {% endif %}">
+  {{ page.above_content }}
+</div>
+
+<a id="main-content" tabindex="-1"></a>
+<div class="defaultmain container pt-4 pb-4">
+  <div class="row">
+    {% if page.sidebar is empty %}
+      <main class="col-sm-12">
+        {{ page.content }}
+      </main>
+    {% else %}
+      <aside class="col-sm-3 order-2 order-sm-0">
+        {{ page.sidebar }}
+      </aside>
+      <main class="col-sm-9">
+        <a id="main-content" tabindex="-1"></a>
+        {{ page.content }}
+      </main>
+    {% endif %}
+  </div>
+</div>
+
+<div class="container-fluid p-0" role="complementary">
+  {{ page.below_content }}
+</div>
+
+<footer class="container-fluid p-0 pt-5 pb-5">
+    <div class="container text-center text-sm-left ">
+        {{ page.footer }}
+    </div>
+</footer>
+
+{{ page.modals }}
+
+

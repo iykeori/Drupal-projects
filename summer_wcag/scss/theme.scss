@@ -1,0 +1,28 @@
+@import 'fonts';
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'alert';
+@import 'button';
+@import 'footer';
+@import 'form';
+@import 'header';
+@import 'hero';
+@import 'image';
+@import 'main';
+@import 'map';
+@import 'nav';
+@import 'nav-mobile';
+@import 'office-hours';
+@import 'payment-icons';
+@import 'reviews';
+@import 'services';
+@import 'social';
+@import 'top';
+@import 'typography';
+@import 'video';
+@import 'trumps';
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}

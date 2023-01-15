@@ -1,0 +1,19 @@
+.star-5 {
+  background-image: url(../images/5-star.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 35px;
+  margin-bottom: 25px;
+}
+
+.testimonial-name {
+  color: var(--secondary);
+  font-family: var(--headings-font-italized);
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-style: italic;
+
+  &::before {
+    content: '-';
+  }
+}

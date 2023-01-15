@@ -1,0 +1,68 @@
+.navbar-toggler {
+  margin-left: 1.5rem;
+}
+
+.navbar {
+  background: $dark;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .nav {
+    justify-content: space-between;
+  }
+
+  .nav-link {
+    color: $white;
+    padding: 1rem 1.3rem;
+
+    &.active, &.is-active {
+      background: $gray-600;
+    }
+  }
+
+  .nav-mobile {
+    align-items: start;
+  }
+
+  .navbar-toggler {
+    border: 0;
+    padding: 0.5rem 0;
+  }
+}
+
+body.navbar-fixed {
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  &.toolbar-fixed .navbar {
+    top: 39px;
+  }
+
+  &.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .navbar {
+    top: 79px;
+  }
+}
+
+.navbar .phone {
+  color: $white;
+  display: none;
+}
+
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+    &#{$infix} {
+      @include media-breakpoint-down($breakpoint) {
+        .phone {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

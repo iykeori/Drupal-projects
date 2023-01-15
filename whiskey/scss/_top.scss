@@ -1,0 +1,20 @@
+:root {
+  --top-background: var(--dark);
+  --top-foreground: white;
+}
+
+.region-top {
+  background-color: var(--top-background);
+  font-size: 1.8rem;
+  padding: 1.2rem 0;
+
+  .region-inner {
+    @extend .container;
+    display: flex;
+
+    a, a:hover {
+      color: var(--top-foreground);
+      text-decoration: none;
+    }
+  }
+}

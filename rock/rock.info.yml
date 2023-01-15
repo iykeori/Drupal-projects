@@ -1,0 +1,29 @@
+name: Rock
+type: theme
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+base theme: bootstrap
+
+libraries:
+  - bootstrap/nav-side
+  - rock/theme
+
+libraries-override:
+  bootstrap/bootstrap:
+    css:
+      theme:
+        css/bootstrap.css: css/theme.css
+
+regions:
+  alert: 'Alert'
+  top: 'Top'
+  header_left: 'Header left'
+  primary_menu: 'Primary menu'
+  header_right: 'Header right'
+  hero: 'Hero'
+  before_content: 'Before content'
+  content: 'Content'
+  after_content: 'After content'
+  footer: 'Footer'
+  modals: 'Modals'

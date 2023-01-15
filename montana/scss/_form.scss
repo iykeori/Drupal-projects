@@ -1,0 +1,33 @@
+:root {
+  --form-submit: #202020;
+  --form-background: #9d9d9d;
+  --form-foreground: #fff;
+}
+
+.webform-submission-form {
+  background: var(--form-background);
+  border-radius: 0.75rem;
+  color: var(--form-foreground);
+  padding: 5rem;
+
+  input[type='submit'] {
+    background: var(--form-background);
+    border-color: 2px solid var(--white);
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .form-textarea {
+      flex-grow: 1;
+    }
+  }
+
+  .form-item-test-optio {
+    margin: 0;
+    overflow: hidden;
+    height: 0;
+  }
+}

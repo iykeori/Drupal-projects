@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Lato', sans-serif;
+  font-size: 10px;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin wrapper {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1300px;
+}
+
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+$mobile-breakpoint: 640px;
+
+@media screen and (max-width: 1400px) {
+  html, body {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html, body {
+    font-size: 8px;
+  }
+}
+
+.nobr {
+  white-space: nowrap;
+}

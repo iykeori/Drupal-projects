@@ -1,0 +1,38 @@
+.social {
+  background-size: 100% 100%;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 0 3px;
+  overflow: hidden;
+  text-indent: 9999px;
+  width: 5.9rem;
+  height: 5.9rem;
+
+  &-facebook {
+    background-image: url('../images/facebook.png');
+  }
+
+  &-gplus {
+    background-image: url('../images/gplus.png');
+  }
+
+  &-google {
+    background-image: url('../images/google.png');
+  }
+
+  &-twitter {
+    background-image: url('../images/twitter.png');
+  }
+
+  &-instagram {
+    background-image: url('../images/instagram.png');
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

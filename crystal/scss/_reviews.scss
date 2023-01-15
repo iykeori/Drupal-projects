@@ -1,0 +1,24 @@
+:root {
+  --star-color: #f6d937;
+}
+
+.star-5 {
+  background-image: url('../images/5-star.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @supports (mask-image: url('../images/5-star.svg')) {
+    background: var(--star-color);
+    mask-image: url('../images/5-star.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+
+  height: 35px;
+}
+
+.icon-yelp {
+  background: url('../images/yelp.png') no-repeat center;
+  background-size: contain;
+  width: 15rem;
+}

@@ -1,0 +1,41 @@
+#block-bamboo-local-tasks {
+  @include clearfix;
+  margin-bottom: 3rem;
+
+  ul {
+    padding-left: 0;
+
+    li {
+      float: left;
+      list-style: none;
+
+      a {
+        background: #eee;
+        border-right: 1px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        color: #000;
+        display: inline-block;
+        font-size: 2.1rem;
+        padding: 10px 30px;
+        text-decoration: none;
+
+        &:active {
+          border-top: 1px solid rgba(0, 0, 0, 0.4);
+          border-left: 1px solid rgba(0, 0, 0, 0.4);
+          border-right: 0;
+          border-bottom: 0;
+        }
+      }
+
+      &:first-child a {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+
+      &:last-child a {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+  }
+}

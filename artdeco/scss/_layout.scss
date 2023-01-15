@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.dialog-off-canvas-main-canvas {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.page-header {
+  margin-bottom: $grid-gutter-width;
+}
+
+.region-primary-menu {
+  width: 100%;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container-fluid {
+  max-width: 75rem;
+}

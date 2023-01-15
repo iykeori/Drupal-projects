@@ -1,0 +1,95 @@
+:root {
+  --hero-background: var(--white);
+}
+
+.region-hero {
+  background: var(--hero-background);
+  overflow: hidden;
+
+  img {
+    display: block;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: auto;
+    max-height: 750px;
+    min-height: 220px;
+
+    @media (max-width: 1100px) {
+      margin-left: -15%;
+      max-width: none !important;
+      width: 130%;
+    }
+
+    @media (max-width: 768px) {
+      object-fit: cover;
+      margin-left: -20%;
+      max-width: none !important;
+      width: 170%;
+    }
+  }
+
+  .carousel-inner {
+    overflow: visible;
+  }
+
+  .carousel-item {
+    display: block;
+
+    .media > div {
+      width: 100%;
+    }
+  }
+
+  .carousel-caption {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: $spacer * 2;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 1450px;
+
+    @include media-breakpoint-down(sm) {
+      display: block;
+      float: left;
+      clear: both;
+      padding: 0px;
+      transform: none;
+      position: relative;
+      top: 0%;
+      left: 0%;
+      border-bottom: 1px solid var(--light);
+    }
+
+    & > div {
+      background: var(--white);
+      color: var(--dark);
+      padding: $spacer * 2;
+      text-align: left;
+      width: 50%;
+      max-width: 48rem;
+
+      @media (max-width: 1000px) {
+        padding: $spacer * 1.5;
+      }
+
+      @include media-breakpoint-down(sm) {
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        padding: 1rem 0;
+      }
+
+      p {
+        @include media-breakpoint-down(sm) {
+          display: none;
+        }
+      }
+    }
+  }
+}

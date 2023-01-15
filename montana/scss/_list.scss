@@ -1,0 +1,59 @@
+:root {
+  --checkmark-color: var(--secondary);
+}
+
+ol, ul {
+  margin-bottom: 2.4rem;
+}
+
+.list {
+
+  &-style-checkmark {
+    font-size: 1.8rem;
+    padding-left: 36px;
+
+    li {
+      list-style: none;
+      margin: 1.2rem 0;
+
+      &::before {
+        background-color: var(--checkmark-color);
+        content: '';
+        display: inline-block;
+        background-image: url(../images/checkmark.svg);
+        background-repeat: no-repeat;
+        margin-left: -36px;
+        margin-right: 11px;
+        position: relative;
+        top: 0.3rem;
+        vertical-align: top;
+        width: 25px;
+        height: 25px;
+        border-radius: 50px 50px 50px 50px;
+        background-position: center;
+        background-size: 20px 9px;
+      }
+
+      a {
+        color: var(--black);
+      }
+
+      &:first-child{
+        margin-top: 0px;
+      }
+    }
+  }
+
+  &-style-no-bullets {
+    padding: 0;
+
+    li {
+      list-style: none;
+      margin-bottom: 2.2rem;
+
+      a {
+        color: inherit;
+      }
+    }
+  }
+}

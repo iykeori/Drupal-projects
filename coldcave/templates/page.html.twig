@@ -1,0 +1,51 @@
+<header class="header">
+  <nav class="navbar {{ navbar_class }} container">
+    <div class="navbar-brand pr-1">
+      {{ page.header }}
+    </div>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      {{ page.primary_menu }}
+    </div>
+    {{ page.header_right }}
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</header>
+
+<div class="bg-dark clearfix">
+  {{ page.hero }}
+</div>
+
+<div class="container-fluid p-0 {% if page.hero is empty %} no-hero {% endif %}">
+  {{ page.above_content }}
+</div>
+
+<main class="container pt-4 pb-4">
+  <div class="row">
+    {% if page.sidebar is empty %}
+      <div class="col-sm-12">
+        {{ page.content }}
+      </div>
+    {% else %}
+      <div class="col-sm-3 order-2 order-sm-0">
+        {{ page.sidebar }}
+      </div>
+      <div class="col-sm-9">
+        {{ page.content }}
+      </div>
+    {% endif %}
+  </div>
+</main>
+
+<div class="container-fluid p-0">
+  {{ page.below_content }}
+</div>
+
+<footer class="container-fluid p-0">
+  {{ page.footer }}
+</footer>
+
+{{ page.modals }}
+
+

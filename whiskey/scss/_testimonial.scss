@@ -1,0 +1,38 @@
+:root {
+  --star-color: #f6d937;
+}
+
+.star-5 {
+  background-image: url('../images/5-star.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @supports (mask-image: url('../images/5-star.svg')) {
+    background: var(--star-color);
+    mask-image: url('../images/5-star.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+
+  height: 35px;
+}
+
+.testimonial {
+
+  &-text {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70rem;
+  }
+
+  &-name {
+    color: var(--secondary);
+    font-style: italic;
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    &::before {
+      content: '-';
+    }
+  }
+}

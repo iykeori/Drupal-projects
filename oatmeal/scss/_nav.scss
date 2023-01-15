@@ -1,0 +1,123 @@
+.navbar {
+  display: block;
+  padding: 0;
+
+  .collapse {
+    @extend .container-fluid;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-toggler {
+    border: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: $spacer * 3;
+    height: 6rem;
+    z-index: 10;
+
+    @include media-breakpoint-down(md) {
+      right: $spacer * 2;
+    }
+  }
+}
+
+.navbar-close {
+  display: none;
+}
+
+.region-primary-menu {
+  width: 100%;
+
+  .nav {
+    background: black;
+    display: flex;
+    flex-direction: row;
+
+    .nav-item {
+      border-right: 1px solid rgba(255, 255, 255, 0.25);
+      flex-grow: 1;
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+
+    a {
+      color: white;
+      display: block;
+      padding: $spacer * 1.5;
+      text-align: center;
+    }
+  }
+}
+
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+    &#{$infix} {
+      @include media-breakpoint-down($breakpoint) {
+
+        .navbar-collapse {
+          background: rgba(0, 0, 0, 0.8);
+          display: flex;
+          align-items: stretch;
+          padding: $spacer;
+          transition: none;
+
+          .region-primary-menu {
+            background: #000;
+            display: flex;
+            align-items: center;
+            height: 100%;
+          }
+
+          .region-inner {
+            position: relative;
+            width: 100%;
+          }
+        }
+
+        .navbar-close {
+          background: transparent;
+          border: 0;
+          color: #fff;
+          display: block;
+          font-size: 4rem;
+          font-weight: 300;
+          padding: 0.5rem 1rem 1rem;
+          position: absolute;
+          top: $spacer * 2;
+          right: $spacer * 2;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.region-sidebar-first {
+
+  .nav {
+    display: block;
+
+    .nav-item {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      a {
+        color: #000;
+        line-height: 1.4;
+        padding: 1rem 0;
+      }
+    }
+  }
+}

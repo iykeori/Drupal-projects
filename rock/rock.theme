@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Disable cache on internal hero
+ */
+function rock_preprocess_block(&$vars) {
+  if (in_array($vars['elements']['#id'], ['internalhero', 'servicehero', 'basichero'])) {
+    $vars['#cache']['max-age'] = 0;
+  }
+}
+
+?>

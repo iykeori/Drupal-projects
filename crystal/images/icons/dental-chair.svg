@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 163.94 163.94" style="enable-background:new 0 0 163.94 163.94;" xml:space="preserve">
+<style type="text/css">
+	.dental-chair-st0{fill:var(--icon-color-primary, #d1e3e5);}
+	.dental-chair-st1{fill:var(--icon-color-secondary, rgba(129,130,133,0.3))}
+	.dental-chair-st2{fill:#FFFFFF;stroke:#313131;stroke-width:2.2677;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.dental-chair-st3{fill:none;stroke:#313131;stroke-width:2.2677;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g id="Layer_4_copy_7">
+	<circle class="dental-chair-st0" cx="46.69" cy="55.08" r="44.16"/>
+	<circle class="dental-chair-st1" cx="106.98" cy="95.27" r="54.99"/>
+</g>
+<g id="NewChair">
+	<g>
+		<g>
+			<g>
+				<path class="dental-chair-st2" d="M124.84,110.88c-1.35,0-2.72-0.34-3.98-1.06L94.07,94.49H62.6c-2.77,0-5.33-1.42-6.77-3.74L32.32,52.78
+					c-2.28-3.68-1.09-8.48,2.65-10.72c3.74-2.24,8.62-1.08,10.9,2.6l21.19,34.23h29.16c1.4,0,2.78,0.37,3.99,1.06l28.64,16.4
+					c3.78,2.17,5.07,6.94,2.87,10.67C130.23,109.5,127.57,110.88,124.84,110.88z"/>
+			</g>
+			<rect x="74.55" y="94.6" class="dental-chair-st2" width="11.94" height="21.14"/>
+			<polygon class="dental-chair-st2" points="100.69,129.6 60.35,129.6 74.55,115.74 86.49,115.74 			"/>
+			<path class="dental-chair-st2" d="M56.81,129.6"/>
+			<path class="dental-chair-st3" d="M81.2,40.17c0.32-1.4,1.03-2.65,2.02-3.63c1.38-1.36,3.27-2.2,5.4-2.2c4.19,0,7.6,3.35,7.6,7.48v37.06"/>
+			<path class="dental-chair-st2" d="M68.29,46.42c1.78-5.22,7.52-8.03,12.82-6.28s8.16,7.4,6.38,12.62L68.29,46.42z"/>
+		</g>
+	</g>
+</g>
+</svg>

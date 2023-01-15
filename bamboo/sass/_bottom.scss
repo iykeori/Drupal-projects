@@ -1,0 +1,7 @@
+.region-bottom {
+  clear: both;
+  
+  .block > .content-wrapper {
+    @include wrapper;
+  }
+}

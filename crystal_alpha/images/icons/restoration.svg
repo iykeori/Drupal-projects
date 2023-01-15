@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 163.94 163.94" style="enable-background:new 0 0 163.94 163.94;" xml:space="preserve">
+<style type="text/css">
+	.restoration-st0{fill:var(--icon-color-primary, #d1e3e5);}
+	.restoration-st1{fill:var(--icon-color-secondary, rgba(129,130,133,0.3))}
+	.restoration-st2{fill:#FFFFFF;stroke:#313131;stroke-width:1.8264;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.restoration-st3{fill:none;stroke:#313131;stroke-width:1.8264;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g id="Layer_5_copy_3">
+	<circle class="restoration-st0" cx="45.61" cy="106.16" r="43.07"/>
+	<circle class="restoration-st1" cx="97.56" cy="72.7" r="60.41"/>
+</g>
+<g id="Restoration">
+	<g>
+		<path class="restoration-st2" d="M100.39,79.32c-0.35,1.5-0.39,3.04-0.14,4.56c0.12,0.73,0.31,1.46,0.57,2.18c3.31,9.21,7.87,28.03-2.06,44.74
+			c-0.31,0.52-0.93,0.77-1.54,0.77c-0.79,0-1.59-0.4-1.74-1.13c-2.13-10.5-8.52-37.49-17.96-37.19
+			c-9.44-0.3-15.83,26.68-17.96,37.19c-0.15,0.73-0.94,1.13-1.74,1.13c-0.61,0-1.23-0.24-1.54-0.77
+			c-9.93-16.71-5.37-35.54-2.06-44.74c0.26-0.72,0.45-1.45,0.57-2.18c0.25-1.52,0.21-3.06-0.14-4.56c-0.33-1.42-0.92-2.81-1.79-4.11
+			c-2.13-3.22-4.76-7.66-6.68-12.56l0.01,0l13.78-3.34l2.75-6.16l6.31-5.59l-0.82-14.6c5.31,0.96,9.32,2.85,9.32,2.85
+			s21.89-10.35,31.41,4.98c6.82,10.91-1.47,26.45-6.75,34.43C101.31,76.51,100.72,77.9,100.39,79.32z"/>
+		<path class="restoration-st3" d="M68.2,32.95L68.2,32.95c5.31,0.96,9.32,2.85,9.32,2.85s21.89-10.35,31.41,4.98
+			c6.82,10.91-1.47,26.45-6.75,34.43c-0.87,1.31-1.46,2.69-1.79,4.11c-0.35,1.5-0.39,3.04-0.14,4.56c0.12,0.73,0.31,1.46,0.57,2.18
+			c3.31,9.21,7.87,28.03-2.06,44.74c-0.31,0.52-0.93,0.77-1.54,0.77c-0.79,0-1.59-0.4-1.74-1.13c-2.13-10.5-8.52-37.49-17.96-37.19
+			c-9.44-0.3-15.83,26.68-17.96,37.19c-0.15,0.73-0.94,1.13-1.74,1.13c-0.61,0-1.23-0.24-1.54-0.77
+			c-9.93-16.71-5.37-35.54-2.06-44.74c0.26-0.72,0.45-1.45,0.57-2.18c0.25-1.52,0.21-3.06-0.14-4.56c-0.33-1.42-0.92-2.81-1.79-4.11
+			c-2.13-3.22-4.76-7.66-6.68-12.56"/>
+		<polyline class="restoration-st3" points="46.18,62.64 59.96,59.3 62.71,53.14 69.03,47.55 68.2,32.95 68.2,32.94 		"/>
+		<polyline class="restoration-st2" points="69.03,47.55 74.04,56.66 88.61,57.29 91.36,67.6 		"/>
+		<polyline class="restoration-st2" points="144.75,79.32 100.39,79.32 100.25,79.32 100.22,79.32 		"/>
+		<polyline class="restoration-st2" points="54.79,79.32 54.79,79.32 54.65,79.32 19.19,79.32 		"/>
+	</g>
+</g>
+</svg>

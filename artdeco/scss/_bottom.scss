@@ -1,0 +1,11 @@
+.region-bottom {
+
+  .block-content {
+    @extend .container-fluid;
+    padding: $grid-gutter-width*2 0;
+
+    p:last-child, blockquote:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

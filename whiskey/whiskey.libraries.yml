@@ -1,0 +1,6 @@
+theme:
+  js:
+    js/card-carousel.js: {}
+    js/logo-carousel.js: {}
+    js/random.js: {}
+    js/theme.js: {}

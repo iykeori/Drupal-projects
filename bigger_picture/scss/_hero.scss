@@ -1,0 +1,41 @@
+:root {
+  --hero-caption-font: 'Open Sans', serif;
+  --hero-caption-font-weight: 700;
+  --hero-caption-em-font: 'Open Sans', serif;
+  --hero-caption-em-font-style: italic;
+  --hero-caption-em-font-weight: 300;
+}
+
+.region-hero {
+
+  .carousel-caption {
+    font-family: var(--hero-caption-font);
+    font-size: 5.4rem;
+    font-weight: var(--hero-caption-font-weight);
+    line-height: 1.1;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.75);
+    bottom: 5rem;
+
+    small {
+      display: block;
+      font-family: var(--hero-caption-em-font);
+      font-size: 3rem;
+      font-style: var(--hero-caption-em-font-style);
+      font-weight: var(--hero-caption-em-font-weight);
+    }
+
+    em {
+      font-family: var(--hero-caption-em-font);
+      font-style: var(--hero-caption-em-font-style);
+      font-weight: var(--hero-caption-em-font-weight);
+    }
+  }
+
+  .carousel-item {
+    img {
+      object-fit: cover;
+      width: 100%;
+      min-height: 24rem;
+    }
+  }
+}

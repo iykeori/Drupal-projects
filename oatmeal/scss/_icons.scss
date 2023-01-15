@@ -1,0 +1,150 @@
+@mixin icon($url) {
+  background-image: url($url);
+
+  @supports (mask-image: url('')) {
+    background: #000;
+    mask-image: url($url);
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+}
+
+.icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  flex-shrink: 0;
+  object-fit: contain;
+  width: 3rem;
+  height: 3rem;
+
+  &.icon-google {
+    @include icon('../images/google.svg');
+
+    &.icon-dark {
+      background-image: url('../images/google-black.svg');
+    }
+
+    &.icon-light {
+      background-image: url('../images/google-white.svg');
+    }
+  }
+
+  &.icon-facebook {
+    @include icon('../images/facebook.svg');
+
+    &.icon-dark {
+      background-image: url('../images/facebook-black.svg');
+    }
+
+    &.icon-light {
+      background-image: url('../images/facebook-white.svg');
+    }
+  }
+
+  &.icon-instagram {
+    background-image: url('../images/instagram.png');
+
+    &.icon-dark {
+      background-image: url('../images/instagram-black.svg');
+    }
+
+    &.icon-light {
+      background-image: url('../images/instagram-white.svg');
+    }
+  }
+
+  &-large {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  &-wide {
+    width: 13rem;
+    height: 6.5rem;
+  }
+
+  &-calendar {
+    @include icon('../images/icons/calendar.svg');
+  }
+
+  &-crown {
+    @include icon('../images/icons/crown.svg')
+  }
+
+  &-dental-chair {
+    @include icon('../images/icons/dental-chair.svg');
+  }
+
+  &-dental-health {
+    @include icon('../images/icons/dental-health.svg');
+  }
+
+  &-dental-tools {
+    @include icon('../images/icons/dental-tools.svg');
+  }
+
+  &-implant {
+    @include icon('../images/icons/implant.svg');
+  }
+
+  &-shield {
+    @include icon('../images/icons/shield.svg');
+  }
+
+  &-smiling-tooth {
+    @include icon('../images/icons/smiling-tooth.svg');
+  }
+
+  &-talking-tooth {
+    @include icon('../images/icons/talking-tooth.svg');
+  }
+
+  &-x-ray {
+    @include icon('../images/icons/x-ray.svg');
+  }
+}
+
+.icon-list {
+  list-style: none;
+  margin-bottom: 1em;
+  padding-left: 0 !important;
+
+  &-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+    padding: 0;
+
+    img {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.years {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-family-sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 4rem;
+  position: relative;
+  width: 12rem;
+  height: 12rem;
+
+  small {
+    font-size: 1.4rem;
+  }
+
+  &::before {
+    @include icon('../images/icons/wreath.svg');
+    content: '';
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    z-index: 10;
+  }
+}

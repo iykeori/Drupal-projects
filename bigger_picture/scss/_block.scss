@@ -1,0 +1,47 @@
+:root {
+  --block-background-image: url('/files/images/block-background-image.jpg');
+  --block-background-image-color: #fff;
+}
+
+.block-background-image {
+  background-image: var(--block-background-image);
+  background-size: cover;
+  color: var(--block-background-image-color);
+
+  h2, .h2, h3, .h3 {
+    color: var(--block-background-image-color);
+  }
+
+  a {
+    color: var(--block-background-image-color);
+    text-decoration: none !important;
+  }
+
+  a h2, a.h2, a h3, a .h3 {
+    color: var(--block-background-image-color);
+  }
+
+  .card-carousel {
+
+    .col-12 {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+
+    @supports (mask-image: url('')) {
+      .carousel-control-prev-icon {
+        background: #fff;
+        mask-image: url('../images/previous.svg');
+        mask-repeat: no-repeat;
+        mask-position: center;
+      }
+
+      .carousel-control-next-icon {
+        background: #fff;
+        mask-image: url('../images/next.svg');
+        mask-repeat: no-repeat;
+        mask-position: center;
+      }
+    }
+  }
+}

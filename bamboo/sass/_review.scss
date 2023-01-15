@@ -1,0 +1,60 @@
+.review {
+  padding-right: 2rem;
+
+  &__stars {
+    background: url('../images/star.png') left;
+    background-size: auto 100%;
+    display: block;
+    margin-bottom: 2rem;
+    width: 3.6rem;
+    height: 3.4rem;
+
+    &--2 {
+      width: 7.2rem;
+    }
+
+    &--3 {
+      width: 10.8rem;
+    }
+
+    &--4 {
+      width: 14.4rem;
+    }
+
+    &--5 {
+      width: 18rem;
+    }
+  }
+
+  p {
+    font-family: 'Noto Serif', serif;
+    font-size: 3.2rem;
+    line-height: 1.4 !important;
+    position: relative;
+
+    &::before {
+      content: '“';
+      position: absolute;
+      top: 0;
+      left: -0.6em;
+    }
+
+    &::after {
+      content: '”';
+    }
+  }
+
+  &__author {
+    font-size: 1.6rem;
+    margin-top: 2.5rem;
+    text-transform: uppercase;
+
+    &::before {
+      content: '—';
+    }
+  }
+}
+
+.sidebar .block:first-child .review {
+  margin-top: 5.5rem;
+}

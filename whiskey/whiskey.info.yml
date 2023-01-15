@@ -1,0 +1,26 @@
+name: Whiskey
+type: theme
+core_version_requirement: ^8 || ^9
+
+base theme: bootstrap
+
+libraries:
+  - bootstrap/nav-side
+  - whiskey/theme
+
+libraries-override:
+  bootstrap/bootstrap:
+    css:
+      theme:
+        css/bootstrap.css: css/theme.css
+
+regions:
+  alert: 'Alert'
+  top: 'Top'
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  hero: 'Hero'
+  content: 'Content'
+  after_content: 'After content'
+  footer: 'Footer'
+  modals: 'Modals'

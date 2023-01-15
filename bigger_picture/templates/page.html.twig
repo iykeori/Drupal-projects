@@ -1,0 +1,42 @@
+{% if page.alert %}
+  <div role="alert">
+    {{ page.alert }}
+  </div>
+{% endif %}
+
+{% if page.hero %}
+  <div role="complementary">
+    {{ page.hero }}
+  </div>
+{% endif %}
+
+<header>
+  <div class="page-header">
+    {{ page.header_left }}
+    {{ page.header_right }}
+  </div>
+  {{ page.primary_menu }}
+</header>
+
+{{ page.before_content }}
+
+<main>
+  <a id="main-content" tabindex="-1"></a>
+  <div class="container d-flex">
+    {{ page.content }}
+    {% if page.sidebar_first|render|trim is not empty %}
+      <aside class="page-sidebar">
+        {{ page.sidebar_first }}
+      </aside>
+    {% endif %}
+  </div>
+</main>
+
+{{ page.after_content }}
+
+<footer class="page-footer">
+  {{ page.footer }}
+  {{ page.bottom }}
+</footer>
+
+{{ page.modals }}

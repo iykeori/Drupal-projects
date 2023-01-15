@@ -1,0 +1,39 @@
+:root {
+  --faq-font-family: sans-serif;
+}
+.accordion {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+
+  &__header {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-bottom: 0;
+    cursor: pointer;
+    font-family: var(--body-font-family);
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0;
+    padding: $spacer - 20px;
+
+    @media(max-width: 767px){
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &::after {
+      content: '-';
+      float: right;
+    }
+
+    &.collapsed::after {
+      content: '+';
+      float: right;
+    }
+  }
+
+  &__body {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-bottom: 0;
+    padding: 50px - 20px;
+  }
+}

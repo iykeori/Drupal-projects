@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 163.94 163.94" style="enable-background:new 0 0 163.94 163.94;" xml:space="preserve">
+<style type="text/css">
+	.heart-st0{fill:var(--icon-color-primary, #d1e3e5);}
+	.heart-st1{fill:var(--icon-color-secondary, rgba(129,130,133,0.3))}
+	.heart-st2{fill:#FFFFFF;stroke:#313131;stroke-width:2.2677;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g id="Layer_4_copy_5">
+	<circle class="heart-st0" cx="46.69" cy="55.08" r="44.16"/>
+	<circle class="heart-st1" cx="106.98" cy="95.27" r="54.99"/>
+</g>
+<g id="Keeping_Safe">
+	<g>
+		<g>
+			<polygon class="heart-st2" points="35.47,110.24 48.32,110.24 48.32,75.34 35.96,75.34 			"/>
+			<path class="heart-st2" d="M72.22,102.81h23.13c6.17,0,6.17-10.11,0-10.11h-7.81c-5.29,0-10.35-1.77-14.82-4.59
+				c-5.78-3.64-18.48-4.42-23.98-2.07l-0.41,17.79l26.52,10.7l8.06,3.25c2.27,0.92,4.84,0.8,7.01-0.33l4.34-2.25l31.63-16.41
+				c2.34-1.21,3.27-4.07,2.09-6.43l0,0c-1.06-2.12-3.5-3.15-5.76-2.43l-21.04,6.67"/>
+		</g>
+		<g>
+			<path class="heart-st2" d="M92.33,51.67c-10.64-16.76-38.03,3.55,0,29.33"/>
+			<path class="heart-st2" d="M92.33,51.67c10.64-16.76,38.03,3.55,0,29.33"/>
+		</g>
+	</g>
+</g>
+</svg>

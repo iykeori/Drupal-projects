@@ -1,0 +1,20 @@
+.clip-circle {
+  aspect-ratio: 1;
+  border-radius: 100%;
+  display: block;
+  overflow: hidden;
+
+  @include media-breakpoint-down(sm) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+  }
+
+  div {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+<?php
+
+use Drupal\Component\Utility\Html;
+
+/**
+ * Include site.js and sites.css files.
+ */
+function blank_library_info_alter(&$libraries, $extension) {
+  if ($extension == 'blank' && isset($libraries['blank'])) {
+    $fs = \Drupal::service('file_system');
+    $path = \Drupal\Core\StreamWrapper\PublicStream::basePath();
+    if (file_exists($fs->realpath('public://site.css'))) {
+      $libraries['blank']['css']['theme']["/$path/site.css"] = array();
+    }
+    if (file_exists($fs->realpath('public://site.js'))) {
+      $libraries['blank']['js']["/$path/site.js"] = array();
+    }
+  }
+}
+
+?>

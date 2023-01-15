@@ -1,0 +1,83 @@
+<article{{ attributes }}>
+
+  {{ title_prefix }}
+  {% if label and not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% if display_submitted %}
+    <footer>
+      {{ author_picture }}
+      <div{{ author_attributes }}>
+        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+        {{ metadata }}
+      </div>
+    </footer>
+  {% endif %}
+  
+    <div class="col-12 component-page">
+        <h3>{{ node.label }}</h3>
+        <p>{{content.field_description.0}}</p>
+        <iframe class="preview-show">
+        </iframe>
+        <p>Example: {{content.field_example_url[0]['#url'] }}</p>
+    </div>
+    <div class="col-12 mt-3 component-resource text-boxes">
+        <div class="col-12 col-md-4 text-box HTMLBox">
+                <div id="HTMLButton" class="heading fa fa-clone">HTML</div>
+                <textarea id="HTMLBox" readonly >
+                    {{content.field_html.0}}
+                </textarea>        
+        </div>
+        <div class="col-12 col-md-4 text-box CSSBox">
+            <div id="CSSButton" class="heading fa fa-clone">CSS</div>
+            <textarea id="CSSBox" readonly >
+                {{content.field_css.0}}
+            </textarea>
+            
+        </div>
+        <div class="col-12 col-md-4 text-box JSBox ">
+            <div id="JSButton" class="heading fa fa-clone">Javascript</div>
+            <textarea id="JSBox" readonly >
+                {{content.field_javascript.0}}
+            </textarea>
+            
+        </div>
+    </div>
+    <div class="mt-5 col-12 notes">
+        <p>{{content.field_notes}}</p>
+    </div>
+</article>
+<script>
+  // HTML BOx JS Code
+    let HTMLBox = document.getElementById("HTMLBox");
+    let HTMLButton = document.getElementById("HTMLButton");
+
+    HTMLButton.onclick = function() {
+      HTMLBox.select();
+      document.execCommand("copy");
+      HTMLButton.innerText = "Copied"
+    }
+
+    // CSS Box Js Code
+      let CSSBox = document.getElementById("CSSBox");
+      let CSSButton = document.getElementById("CSSButton");
+
+      CSSButton.onclick = function() {
+        CSSBox.select();
+        document.execCommand("copy");
+        CSSButton.innerText = "Copied"
+      }
+    // JavaScript BOx JS Code
+      let JSBox = document.getElementById("JSBox");
+      let JSButton = document.getElementById("JSButton");
+
+      JSButton.onclick = function() {
+        JSBox.select();
+        document.execCommand("copy");
+        JSButton.innerText = "Copied"
+      }
+</script>

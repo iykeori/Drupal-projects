@@ -1,0 +1,43 @@
+.services {
+  margin: $spacer * 2 auto -$spacer * 2;
+
+  &-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: $spacer * 2;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      
+       
+
+      img {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    > div:first-child {
+      flex-shrink: 0;
+      justify-content: center;
+      margin-right: 2rem;
+      width: 13rem;
+
+      img {
+        width: auto;
+        max-height: 13rem;
+      }
+
+      svg {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .btn-alt {
+      border-bottom-width: 1px;
+    }
+  }
+}

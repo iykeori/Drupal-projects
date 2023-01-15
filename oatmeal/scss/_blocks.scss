@@ -1,0 +1,47 @@
+.callout {
+  background: $dark;
+  color: #fff;
+  text-align: center;
+  padding: 10rem 14rem;
+
+  .btn {
+    background: #000;
+    color: #fff;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: $spacer * 3;
+  }
+}
+
+.office-hours {
+  line-height: $line-height-base;
+  width: 100%;
+
+  tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  th, td {
+    font-weight: 300;
+    line-height: 1.4;
+    padding: 0.75rem 0;
+  }
+}
+
+.region-footer .office-hours {
+  width: auto;
+
+  tr {
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+
+  th, td {
+    font-weight: normal;
+    line-height: 1.4;
+    padding: 0.75rem 1.5rem;
+  }
+}

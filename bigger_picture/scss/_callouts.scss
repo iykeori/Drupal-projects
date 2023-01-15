@@ -1,0 +1,60 @@
+.callouts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .callout {
+    color: #fff;
+    flex-basis: 25%;
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+
+    .media, .media div, img {
+      width: 100%;
+    }
+
+    img {
+      transition: transform 500ms ease;
+    }
+
+    a {
+      background: linear-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.5));
+      color: var(--callouts-foreground-color);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      font-size: 2.2rem;
+      padding: 3rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-decoration: none !important;
+      width: 100%;
+      height: 100%;
+
+      @include media-breakpoint-down(md) {
+        padding: 2rem;
+      }
+    }
+
+    &:hover {
+
+      img {
+        transform: scale(1.1);
+      }
+
+      a {
+        background: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      flex-basis: 50%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-basis: 100%;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 163.94 163.94" style="enable-background:new 0 0 163.94 163.94;" xml:space="preserve">
+<style type="text/css">
+	.dental-chair-st0{fill:var(--icon-color-primary, #d1e3e5);}
+	.dental-chair-st1{fill:var(--icon-color-secondary, rgba(129,130,133,0.3));}
+	.dental-chair-st2{fill:#FFFFFF;stroke:#091821;stroke-width:2.8346;}
+	.dental-chair-st3{fill:none;stroke:#091821;stroke-width:2.8346;}
+</style>
+<g id="Layer_4_copy">
+	<circle class="dental-chair-st0" cx="46.69" cy="55.08" r="44.16"/>
+	<circle class="dental-chair-st1" cx="106.98" cy="95.27" r="54.99"/>
+</g>
+<g id="Layer_7">
+	<g>
+		<path class="dental-chair-st2" d="M139.13,108.5c0,0-10.48-10.48-16.62-16.62c-6.14-6.14-9.94-6.32-17.07-6.32c-6.34,0-32.18-0.33-37.82-0.41
+			C63.99,81.49,37.09,54.3,35.56,53.1c-3.31-2.58-7.78-2.97-10.74,0c-2.97,2.97-2.97,7.78,0,10.75c0,0,26.9,26.9,33.03,33.04
+			c6.14,6.14,10.93,4.27,17.95,4.27c3.49,0,12.06,0,19.78,0l14.09-0.13l18.7,18.21c2.97,2.97,7.78,2.97,10.75,0
+			C142.1,116.28,142.1,111.47,139.13,108.5z"/>
+		<line class="dental-chair-st2" x1="83.07" y1="85.56" x2="93.08" y2="71.83"/>
+		<line class="dental-chair-st2" x1="76.95" y1="71.83" x2="109.22" y2="71.83"/>
+		<line class="dental-chair-st2" x1="72.41" y1="101.28" x2="72.41" y2="120"/>
+		<line class="dental-chair-st2" x1="97.14" y1="101.28" x2="97.14" y2="120"/>
+		<path class="dental-chair-st2" d="M108.53,135.72c4.34,0,7.86-3.52,7.86-7.86c0-4.34-3.52-7.86-7.86-7.86H61.01c-4.34,0-7.86,3.52-7.86,7.86
+			c0,4.34,3.52,7.86,7.86,7.86H108.53z"/>
+		<path class="dental-chair-st3" d="M125.84,76.76V49.88V40.6c0-6.84-5.54-12.38-12.38-12.38c0,0-13.74,0-22.58,0c-8.84,0-15.39,7.52-15.39,7.52"
+			/>
+		<path class="dental-chair-st2" d="M56.92,35.74c5.13-5.13,13.44-5.13,18.57,0c5.12,5.12,5.12,13.43,0,18.56L56.92,35.74z"/>
+	</g>
+</g>
+</svg>

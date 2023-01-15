@@ -1,0 +1,23 @@
+.region-header {
+  @extend .container-fluid;
+  padding-left: $spacer * 3 + $spacer !important;
+  padding-right: $spacer * 3 + $spacer !important;
+
+  @include media-breakpoint-down(md) {
+    padding-left: $spacer * 3 !important;
+    padding-right: $spacer * 3 !important;
+  }
+
+  .region-inner {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #block-oatmeal-branding img {
+    max-width: 100%;
+    max-height: 100px;
+  }
+}

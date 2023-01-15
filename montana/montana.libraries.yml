@@ -1,0 +1,5 @@
+theme:
+  js:
+    js/theme.js: {}
+    js/logo-carousel.js: {}
+    js/random.js: {}

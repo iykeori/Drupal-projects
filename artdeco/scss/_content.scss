@@ -1,0 +1,7 @@
+.region-content {
+  padding: 0 0 $grid-gutter-width*2;
+
+  p:last-child, blockquote:last-child {
+    margin-bottom: 0;
+  }
+}

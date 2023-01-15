@@ -1,0 +1,106 @@
+:root {
+  --icon-color-primary: var(--primary);
+  --icon-color-secondary: rgba(129, 130, 133, 0.3);
+}
+
+@mixin icon($url) {
+  background-image: url($url);
+
+  @supports (mask-image: url('')) {
+    mask-image: url($url);
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+}
+
+.icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  flex-shrink: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+
+  &.icon-google {
+    @include icon('../images/google.svg');
+
+    &.icon-dark {
+      background: var(--black);
+    }
+
+    &.icon-light {
+      background: var(--white);
+    }
+  }
+
+  &.icon-facebook {
+    @include icon('../images/facebook.svg');
+
+    &.icon-dark {
+      background: var(--black);
+    }
+
+    &.icon-light {
+      background: var(--white);
+    }
+  }
+
+  &.icon-instagram {
+    @include icon('../images/instagram.svg');
+
+    &.icon-dark {
+      background: var(--black);
+    }
+
+    &.icon-light {
+      background: var(--white);
+    }
+  }
+
+  &.icon-twitter {
+    @include icon('../images/twitter.svg');
+
+    &.icon-dark {
+      background: var(--black);
+    }
+
+    &.icon-light {
+      background: var(--white);
+    }
+  }
+
+  &.icon-youtube {
+    @include icon('../images/youtube.svg');
+
+    &.icon-dark {
+      background: var(--black);
+    }
+
+    &.icon-light {
+      background: var(--white);
+    }
+  }
+
+  &-small {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  &-large {
+    width: 11rem;
+    height: 11rem;
+  }
+
+  svg {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.mw-icon {
+  img {
+    max-width: 50% !important;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,20 @@
+:root {
+  --body-font-family: 'Jost', sans-serif;
+  --headings-font-family: 'Playfair Display', serif;
+  --headings-font-weight: 400;
+}
+
+$btn-border-radius: 100rem;
+$font-family-sans-serif: var(--body-font-family);
+$font-family-serif: var(--headings-font-family);
+$font-size-base: 1.6rem;
+$grid-gutter-width: 50px;
+$headings-font-family: $font-family-serif;
+$headings-font-weight: var(--headings-font-weight);
+$paragraph-margin-bottom: 1.8rem;
+$input-btn-padding-y: .375rem !default;
+$input-btn-padding-x: 1.25rem;
+$spacer: 25px;
+$container-max-width: 1440px;
+$color-black: black;
+$light-ash: #f7f7f7;

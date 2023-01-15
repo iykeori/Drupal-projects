@@ -1,0 +1,114 @@
+:root {
+  --nav-foreground: var(--dark);
+  --nav-hover: var(--secondary);
+  --mobile-nav-background: var(--dark);
+  --dropdown-background: var(--white);
+  --dropdown-foreground: var(--dark);
+  --dropdown-hover-background: var(--light);
+  --dropdown-hover-foreground: var(--dark);
+  --dropdown-detail: var(--secondary);
+}
+
+.navbar {
+  margin-right: -1rem;
+  padding: 0;
+
+  &-toggler {
+    border: 0;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.nav-link {
+  color: var(--nav-foreground);
+  text-decoration: none !important;
+
+  &:hover {
+    color: var(--nav-hover);
+  }
+}
+
+body.navbar-breakpoint {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+    &#{$infix} {
+      @include media-breakpoint-down($breakpoint) {
+
+        .region-primary-menu {
+          height: 100%;
+
+          .region-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: space-between;
+            padding: 2rem;
+            min-height: 100%;
+
+            a[href^='tel:'] {
+              border-radius: 0.25rem;
+              margin: 2rem;
+            }
+          }
+        }
+
+        .navbar-collapse {
+          background: var(--mobile-nav-background);
+          padding: 0;
+        }
+
+        .navbar {
+          order: 10;
+          padding: 0;
+
+          .nav {
+            min-width: 20rem;
+          }
+
+          .nav-link {
+            padding: 1rem 2rem;
+          }
+        }
+
+        .dropdown-menu .nav-item {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.dropdown-toggle::after {
+  border: 0;
+  color: var(--dropdown-detail);
+  content: '+';
+  vertical-align: inherit;
+}
+
+.dropdown-toggle[href='/services']::after {
+  @media(max-width: 1200px){
+    display: none;
+  }
+}
+
+.dropdown-item {
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+
+  &.active, &:active {
+    background: var(--dropdown-background);
+    color: var(--dropdown-foreground) !important;
+  }
+
+  &:hover {
+    background: var(--dropdown-hover-background);
+    color: var(--dropdown-hover-foreground);
+  }
+}
+
+.dropdown-menu {
+  background: var(--dropdown-background);
+}

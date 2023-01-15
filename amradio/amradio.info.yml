@@ -1,0 +1,31 @@
+name: AM Radio
+type: theme
+core_version_requirement: ^8 || ^9
+core: 8.x
+base theme: false
+
+libraries:
+  - amradio/amradio
+
+ckeditor_stylesheets:
+  - css/respond.css
+
+regions:
+  appointmentpop: Appointment popup
+  menulines: Mobile menu button
+  contactpop: Contact popup
+  mobilemenu: Mobile menu
+  headera : Header left
+  headerb: Header right
+  hero: Hero
+  header: Header
+  highlighted: Highlighted
+  above: Above content
+  sidebar_first: Sidebar
+  content: Content
+  below: Below content
+  levelone : Level one
+  leveltwo : Level two
+  levelthree : Level three
+  levelfour : Level four
+  footer: Footer
